@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "quote": "Placeholder – a specific line from a nonprofit client: what the audit found, or what changed after the migration. A number or a saved deadline beats a general compliment.",
+      "name": "Name, Title",
+      "org": "Organization",
+      "initials": "AB",
+      "color": "#4E7145",
+      "placeholder": true
+    },
+    {
+      "quote": "Placeholder – a line from a law firm client about client/matter records getting untangled, or a migration that stayed on budget because of the audit.",
+      "name": "Name, Title",
+      "org": "Firm",
+      "initials": "CD",
+      "color": "#0A3A7A",
+      "placeholder": true
+    },
+    {
+      "quote": "Placeholder – a line from an implementation-partner referral about what it's like to hand off data hygiene work, or work alongside Trellis mid-engagement.",
+      "name": "Name, Title",
+      "org": "Company",
+      "initials": "EF",
+      "color": "#4C70A0",
+      "placeholder": true
+    }
+  ]
+}

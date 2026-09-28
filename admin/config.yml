@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "testimonials"
+    label: "Home Page Testimonials"
+    files:
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "data/testimonials.json"
+        fields:
+          - label: "Testimonials"
+            name: "items"
+            widget: "list"
+            summary: "{{name}} — {{org}}"
+            fields:
+              - {label: "Quote", name: "quote", widget: "text", hint: "Keep it specific — a number or a saved deadline reads better than a general compliment."}
+              - {label: "Name & Title", name: "name", widget: "string", hint: "e.g. \"Maria Alvarez, Executive Director\""}
+              - {label: "Organization", name: "org", widget: "string"}
+              - {label: "Avatar Initials", name: "initials", widget: "string", pattern: ["^.{1,3}$", "Use 1–3 letters"]}
+              - label: "Avatar Color"
+                name: "color"
+                widget: "select"
+                options:
+                  - {label: "Sage", value: "#4E7145"}
+                  - {label: "Navy", value: "#0A3A7A"}
+                  - {label: "Steel Blue", value: "#4C70A0"}
+                  - {label: "Ember", value: "#B9713A"}
+                  - {label: "Deep Sage", value: "#395430"}
+              - label: "Still a placeholder?"
+                name: "placeholder"
+                widget: "boolean"
+                default: true
+                hint: "Leave checked until this is a real quote — it keeps the dashed placeholder styling on the live site as a reminder."

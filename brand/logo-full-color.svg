@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 100">
+  <rect x="9" y="4" width="92" height="92" rx="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
+  <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <line x1="20.22" y1="15.22" x2="89.78" y2="84.78"/>
+    <line x1="20.22" y1="42.15" x2="62.85" y2="84.78"/>
+    <line x1="47.15" y1="15.22" x2="89.78" y2="57.85"/>
+  </g>
+  <g stroke="#4E7145" stroke-width="4" stroke-linecap="round">
+    <line x1="89.78" y1="15.22" x2="20.22" y2="84.78"/>
+    <line x1="89.78" y1="42.15" x2="47.15" y2="84.78"/>
+    <line x1="62.85" y1="15.22" x2="20.22" y2="57.85"/>
+  </g>
+  <circle cx="52.76" cy="60.1" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
+  <circle cx="65.1" cy="45.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
+  <circle cx="78.56" cy="30.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
+  <text transform="translate(127 54.04)" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700" font-size="53.51" letter-spacing="-1.0702" fill="#04285C"><tspan x="0" y="0">Trellis</tspan></text>
+  <text transform="translate(129.15 83.61)" font-family="ArialMT, Arial, sans-serif" font-size="21.12" letter-spacing="1.29" fill="#55637A"><tspan x="0" y="0">Data Partners</tspan></text>
+</svg>

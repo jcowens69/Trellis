@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#04285C">
+<title>Data Audits &amp; CRM Migration Cleanup | Trellis Data Partners</title>
+<meta name="description" content="Trellis Data Partners audits and cleans messy databases before your CRM migration &ndash; for nonprofits, law firms, and other relationship-driven organizations. Start with a fixed-fee data audit.">
+<link rel="canonical" href="https://trellisdatapartners.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trellis Data Partners">
+<meta property="og:url" content="https://trellisdatapartners.com/">
+<meta property="og:title" content="Data Audits &amp; CRM Migration Cleanup | Trellis Data Partners">
+<meta property="og:description" content="We audit, clean, and untangle organizational databases before your CRM migration goes live. Start with a fixed-fee data audit.">
+<meta property="og:image" content="https://trellisdatapartners.com/images/trellis-social-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trellis Data Partners &ndash; structure for data that's outgrown its system.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data Audits &amp; CRM Migration Cleanup | Trellis Data Partners">
+<meta name="twitter:description" content="We audit, clean, and untangle organizational databases before your CRM migration goes live.">
+<meta name="twitter:image" content="https://trellisdatapartners.com/images/trellis-social-share.png">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://trellisdatapartners.com/#business",
+      "name": "Trellis Data Partners",
+      "url": "https://trellisdatapartners.com/",
+      "email": "info@trellisdatapartners.com",
+      "description": "Database audits, data cleanup, and CRM migration support for nonprofits, law firms, and other relationship-driven organizations.",
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "knowsAbout": [
+        "CRM data migration",
+        "Database deduplication",
+        "Data hygiene and cleanup",
+        "Salesforce data migration",
+        "Legacy system data audits"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://trellisdatapartners.com/#website",
+      "url": "https://trellisdatapartners.com/",
+      "name": "Trellis Data Partners",
+      "publisher": { "@id": "https://trellisdatapartners.com/#business" }
+    },
+    {
+      "@type": "Service",
+      "name": "Data Health Audit",
+      "provider": { "@id": "https://trellisdatapartners.com/#business" },
+      "serviceType": "Database audit",
+      "description": "A fixed-fee review of an organization's database that identifies duplicate records, unused fields, and migration risk before a CRM migration begins.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Data services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Health Audit" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Migration Prep" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Migration Management" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Migration Assistance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing Data Management" } }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', user => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#" aria-label="Trellis Data Partners home">
+      <span class="mark-wrap">
+        <svg class="mark" width="72" height="72" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="42" height="42" rx="12" fill="#FAF6EF" stroke="#E4DDD0"/>
+          <g stroke="#04285C" stroke-width="2" stroke-linecap="round" opacity="0.9">
+            <line x1="6" y1="6" x2="38" y2="38"/>
+            <line x1="6" y1="18" x2="26" y2="38"/>
+            <line x1="18" y1="6" x2="38" y2="26"/>
+          </g>
+          <g stroke="#4E7145" stroke-width="2" stroke-linecap="round">
+            <line x1="38" y1="6" x2="6" y2="38"/>
+            <line x1="38" y1="18" x2="18" y2="38"/>
+            <line x1="26" y1="6" x2="6" y2="26"/>
+          </g>
+          <circle cx="21" cy="27" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+          <circle cx="27" cy="20" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+          <circle cx="33" cy="13" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+        </svg>
+        <span class="wordmark nav-wordmark"><span class="main">Trellis</span><span class="sub">Data Partners</span></span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#industries">Who We Help</a></li>
+      <li><a href="#problem">The Problem</a></li>
+      <li class="has-dropdown">
+        <a href="#services">What We Do</a>
+        <button class="dropdown-toggle" aria-expanded="false" aria-label="Show services menu">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#svc-audit">Data Health Audit</a></li>
+          <li><a href="#svc-prep">Data Migration Prep</a></li>
+          <li><a href="migration-management/index.html">Migration Management</a></li>
+          <li><a href="#svc-post">Post-Migration Assistance</a></li>
+          <li><a href="#svc-ongoing">Ongoing Data Management</a></li>
+        </ul>
+      </li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="faq/index.html">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-cta-wrap">
+        <a class="cta-small" href="#contact">Book Your Data Audit</a>
+        <span class="nav-cta-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Data, migration-ready.</p>
+      <h1>Somewhere in your database, there's a mess waiting to surface. We find it <span class="accent">before</span> it lands in your new system.</h1>
+      <p class="lede">We audit, clean, and untangle organizational databases&nbsp;&ndash; duplicate contacts, dead fields, a decade of inconsistent entry&nbsp;&ndash; so your migration doesn't blow its timeline or its budget.</p>
+      <a class="btn btn-sage" href="#contact">Book Your Data Audit</a>
+      <span class="hero-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+    </div>
+
+    <div class="ledger-stack">
+      <svg class="blob" width="260" height="260" viewBox="0 0 260 260" style="top:-40px; right:-60px; opacity:.5;" aria-hidden="true">
+        <path fill="#E3EBDD" d="M164,28c30,14,54,44,58,78c4,35-14,73-46,90c-33,17-77,12-104-10c-28-22-42-61-32-97c10-37,44-63,80-70c15-3,30-1,44,9Z"/>
+      </svg>
+      <div class="ledger" id="ledger">
+        <div class="ledger-chrome">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span>contact_export.csv</span>
+          <span class="state-pill" id="sigState">BEFORE</span>
+        </div>
+        <div class="ledger-meta">
+          <span>12,400 contact records</span>
+          <span id="ledgerFlags">1,412 flagged</span>
+        </div>
+        <div class="ledger-scroll">
+          <table class="ledger-table">
+            <thead>
+              <tr><th>Name</th><th>Email</th><th>Phone</th><th>Last activity</th><th>Date</th></tr>
+            </thead>
+            <tbody id="beforeBody">
+              <tr><td>SMITH, ROBERT J</td><td><span class="bad">rsmith@gmail,com</span></td><td>(901)555-0134</td><td>$250</td><td><span class="bad">3/4/19</span></td></tr>
+              <tr><td><span class="bad">Smith, Bob</span></td><td>rsmith@gmail.com</td><td><span class="bad">901-555-0134</span></td><td><span class="bad">250.00</span></td><td>03/04/2019</td></tr>
+              <tr><td><span class="bad">robert smith</span></td><td><span class="bad">&mdash;</span></td><td><span class="bad">9015550134</span></td><td>$250</td><td><span class="bad">Mar 4 2019</span></td></tr>
+              <tr><td>Alvarez, M.</td><td><span class="bad">malvarez@</span></td><td>(901) 555-0187</td><td>$1,000</td><td>11/22/2021</td></tr>
+              <tr><td><span class="bad">ALVAREZ, MARIA</span></td><td>malvarez@novaco.com</td><td><span class="bad">9015550187</span></td><td>$1,000</td><td><span class="bad">22/11/21</span></td></tr>
+            </tbody>
+            <tbody id="afterBody">
+              <tr><td>Smith, Robert J.</td><td>rsmith@gmail.com</td><td>(901) 555-0134</td><td>$250.00</td><td>2019-03-04</td></tr>
+              <tr><td colspan="5"><span class="merge-tag">&check; 3 records merged into 1</span></td></tr>
+              <tr><td>Alvarez, Maria</td><td>malvarez@novaco.com</td><td>(901) 555-0187</td><td>$1,000.00</td><td>2021-11-22</td></tr>
+              <tr><td colspan="5"><span class="merge-tag">&check; 2 records merged into 1</span></td></tr>
+              <tr><td colspan="5"><span class="ok">All fields normalized. 0 flags remaining.</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ledger-foot">
+          <button class="sig-toggle" id="sigToggle">Watch it get cleaned up</button>
+        </div>
+      </div>
+      <p class="ledger-caption">Sample records, shown for illustration.</p>
+    </div>
+  </div>
+</div>
+
+<div class="creds"></div>
+
+<section id="industries">
+  <div class="wrap">
+    <p class="eyebrow">Who we help</p>
+    <h2>Every organization outgrows its system eventually.</h2>
+    <p class="section-lede">The industries change. The pattern doesn't &ndash; years of records entered by different people, in different formats, finally colliding with a migration deadline.</p>
+    <div class="ind-grid">
+      <a class="ind-card linked" href="nonprofit/index.html">
+        <span class="ind-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#395430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+        <h3>Nonprofit organizations</h3>
+        <p>Donor databases with a decade of inconsistent entry, about to meet a CRM migration.</p>
+        <span class="ind-link">See how we help nonprofits &rarr;</span>
+      </a>
+      <a class="ind-card linked" href="legal/index.html">
+        <span class="ind-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#395430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7l-3 6a3.5 3.5 0 0 0 7 0Zm14 0-3 6a3.5 3.5 0 0 0 7 0ZM5 7h14M3 21h18"/></svg></span>
+        <h3>Law firms</h3>
+        <p>Client and matter records scattered across practice-management tools and spreadsheets.</p>
+        <span class="ind-link">See how we help law firms &rarr;</span>
+      </a>
+      <a class="ind-card linked" href="real-estate/index.html">
+        <span class="ind-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#395430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9"/></svg></span>
+        <h3>Real estate</h3>
+        <p>Client and lead data scattered across MLS exports, spreadsheets, and old CRMs &ndash; with the referral history nobody's tracking.</p>
+        <span class="ind-link">See how we help real estate &rarr;</span>
+      </a>
+      <a class="ind-card linked" href="business/index.html">
+        <span class="ind-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#395430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V9l6-4 6 4v12"/><path d="M10 21v-6h4v6"/></svg></span>
+        <h3>Growing businesses</h3>
+        <p>Customer and vendor data scattered across sales, support, and billing, with renewals nobody's tracking.</p>
+        <span class="ind-link">See how we help businesses &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" style="--scallop-color:#021A3E; height:16px; background:var(--scallop-color); -webkit-mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; position:relative; z-index:3;"></div>
+<section id="problem">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2>Nobody notices the tangle until the migration is already underway.</h2>
+        <p class="problem-text">
+          Duplicate contacts get counted twice. Lapsed fields quietly corrupt reports. It's what happens when cleanup keeps losing to the closer deadline &ndash; pushed to <em>"once we're live"</em> until the spreadsheet meant to hold things over outlives the system it was standing in for. <strong>By the time an implementation partner opens the export, there's no time left to plan around what they find.</strong>
+        </p>
+      </div>
+      <div class="flag-panel" aria-hidden="true">
+        <p class="flag-panel-head"><span>Flagged</span><span>audit output</span></p>
+        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Duplicate records</div>
+        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Dead fields</div>
+        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>A decade of inconsistent entry</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2>Root it in an audit. Grow from there.</h2>
+    <div class="services-grid">
+      <div class="svc featured" id="svc-audit">
+        <span class="svc-idx">01</span>
+        <h3>Data Health Audit</h3>
+        <p>A closer look at what's actually going on in your database &ndash; how much is duplicated, which fields nobody trusts anymore, where the real migration risk is hiding. You walk away with real numbers, not guesses.</p>
+      </div>
+      <div class="svc" id="svc-prep">
+        <span class="svc-idx">02</span>
+        <h3>Data Migration Prep</h3>
+        <p>The unglamorous work: names, phone numbers, addresses, and dates made consistent across every record, categories and tags cleaned up, transactions aligned and formatted correctly. Duplicates get merged instead of migrated twice.</p>
+      </div>
+      <div class="svc" id="svc-migration">
+        <span class="svc-idx">03</span>
+        <h3>Migration Management</h3>
+        <p>You choose how involved we get. We'll help you pick the new platform, translate your team's needs into a real spec, then run point with the software implementer &ndash; from a sounding board to full ownership. Seed to bloom, and everywhere in between. <a class="ind-link" href="migration-management/index.html">See how it works &rarr;</a></p>
+      </div>
+      <div class="svc" id="svc-post">
+        <span class="svc-idx">04</span>
+        <h3>Post-Migration Assistance</h3>
+        <p>The stretch after the implementer's contract ends and before the system actually feels right &ndash; a focused, one-month engagement to fix the small stuff that only shows up once your team starts using it day to day.</p>
+      </div>
+      <div class="svc" id="svc-ongoing">
+        <span class="svc-idx">05</span>
+        <h3>Ongoing Data Management</h3>
+        <p>A standing arrangement to keep the database from sliding back into the state you just paid to get it out of &ndash; database administration, continued data cleaning and hygiene, and regular reporting and analytics, evolving the system as your needs change instead of letting it quietly decay.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="migration-callout">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div>
+        <p class="eyebrow">Beyond the audit</p>
+        <h2>As involved as you want us to be. Seed to bloom, and everywhere in between.</h2>
+        <p class="problem-text">Choosing a new system is only step one. We'll help you pick the platform, gather what your team actually needs, then run the whole build with the software implementer &ndash; or just the parts you don't want to own yourself. You set the level, and it can change as the project does.</p>
+        <a class="btn btn-sage callout-cta" href="migration-management/index.html">See how Migration Management works</a>
+      </div>
+      <div class="mini-stage-grid">
+        <div class="mini-stage">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="4" ry="5.5"/></svg></span>
+          <p class="name">Seed</p>
+          <p>Advisory only &ndash; a sounding board when you need one.</p>
+        </div>
+        <div class="mini-stage">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 11c0-3 3-5 5-4-1 3-2 5-5 4z"/></svg></span>
+          <p class="name">Sprout</p>
+          <p>We choose the platform and write the spec.</p>
+        </div>
+        <div class="mini-stage">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V6"/><path d="M12 13c0-3 3-5 5-4-1 3-2 5-5 4z"/><path d="M12 16c0-3-3-5-5-4 1 3 2 5 5 4z"/></svg></span>
+          <p class="name">Grow</p>
+          <p>We're on every build call alongside your team.</p>
+        </div>
+        <div class="mini-stage">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-6"/><circle cx="12" cy="9" r="2.4"/><circle cx="8.5" cy="11" r="1.6"/><circle cx="15.5" cy="11" r="1.6"/></svg></span>
+          <p class="name">Bloom</p>
+          <p>We run point with the vendor, end to end.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Audit first. Always.</h2>
+    <div class="process">
+      <div class="step">
+        <span class="step-num">1</span>
+        <div class="step-rule"></div>
+        <h3>Audit your database</h3>
+        <p>A short, fixed-fee look under the hood. Nobody can price cleanup work blind, and you shouldn't sign a contract that pretends otherwise.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <div class="step-rule"></div>
+        <h3>Get a real scope</h3>
+        <p>You get an estimate based on what's actually in your data, not an industry average.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <div class="step-rule"></div>
+        <h3>Clean data, handed off your way</h3>
+        <p>From there it's up to you: take the cleaned-up database and go, add <a href="migration-management/index.html">migration management</a> for the build itself, or move into an ongoing retainer that keeps things clean well after go-live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" style="--scallop-color:#021A3E; height:16px; background:var(--scallop-color); -webkit-mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; position:relative; z-index:3;"></div>
+<section id="testimonials">
+  <div class="wrap">
+    <p class="eyebrow">In their words</p>
+    <h2>Ask the people who handed over the mess.</h2>
+    <div class="testi-grid" id="testiGrid"></div>
+    <script>
+      fetch('data/testimonials.json')
+        .then(r => r.json())
+        .then(data => {
+          const grid = document.getElementById('testiGrid');
+          grid.innerHTML = (data.items || []).map(t => `
+            <div class="testi-card">
+              <span class="testi-quote-mark">&ldquo;</span>
+              <p class="quote${t.placeholder ? ' tbd' : ''}">${t.quote}</p>
+              <div class="testi-who">
+                <span class="testi-avatar" style="background:${t.color || '#4E7145'};">${t.initials || ''}</span>
+                <div><div class="testi-name${t.placeholder ? ' tbd-i' : ''}">${t.name}</div><div class="testi-role${t.placeholder ? ' tbd-i' : ''}">${t.org}</div></div>
+              </div>
+            </div>
+          `).join('');
+        })
+        .catch(() => {});
+    </script>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="wrap">
+    <p class="eyebrow">Who this is for</p>
+    <h2>You're either planning a migration, or referring one</h2>
+    <div class="audience">
+      <div class="audience-card">
+        <h3>Staff planning a migration</h3>
+        <p>Executive directors, operations leads, and office managers who know the database is a mess and want it handled before the new CRM goes live, not discovered mid-project.</p>
+      </div>
+      <div class="audience-card">
+        <h3>CRM implementation partners</h3>
+        <p>Firms who need a specialist for the deep data hygiene work outside their own scope. We work under your engagement, not around it &ndash; ask about a referral arrangement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="security" class="alt-paper">
+  <div class="wrap">
+    <p class="eyebrow">How your data travels</p>
+    <h2>Your files never go over email.</h2>
+    <div class="milestone-lede">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4E7145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <p class="section-lede" style="margin:0;">Every file we exchange &ndash; the export, the mid-project check-ins, the final handoff &ndash; moves through a dedicated secure portal, not an inbox. It costs more than attaching a spreadsheet to an email. It's also the difference between saying you're careful with data and being able to prove it.</p>
+    </div>
+    <div class="check-grid">
+      <div class="check"><span class="check-idx">01</span><h3>Encrypted, always</h3><p>In transit and at rest, every file, every time.</p></div>
+      <div class="check"><span class="check-idx">02</span><h3>SOC 2 compliant infrastructure</h3><p>The same standard banks and auditors expect, not a workaround.</p></div>
+      <div class="check"><span class="check-idx">03</span><h3>A full audit trail</h3><p>A record of exactly who accessed what, and when.</p></div>
+      <div class="check"><span class="check-idx">04</span><h3>Links that expire</h3><p>Nothing lives in a sent folder forever.</p></div>
+    </div>
+    <p class="lift-note">It's also a real line in a proposal, not just a cost: "we don't move your data over email" is something you can say with a straight face.</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why-grid">
+    <div class="why-graphic">
+      <svg width="220" height="220" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="1" y="1" width="42" height="42" rx="12" fill="#FAF6EF" stroke="#E4DDD0"/>
+        <g stroke="#04285C" stroke-width="1.4" stroke-linecap="round" opacity="0.9">
+          <line x1="6" y1="6" x2="38" y2="38"/>
+          <line x1="6" y1="18" x2="26" y2="38"/>
+          <line x1="18" y1="6" x2="38" y2="26"/>
+        </g>
+        <g stroke="#4E7145" stroke-width="1.4" stroke-linecap="round">
+          <line x1="38" y1="6" x2="6" y2="38"/>
+          <line x1="38" y1="18" x2="18" y2="38"/>
+          <line x1="26" y1="6" x2="6" y2="26"/>
+        </g>
+        <circle cx="21" cy="27" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+        <circle cx="27" cy="20" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+        <circle cx="33" cy="13" r="2.6" fill="#395430" stroke="#FAF6EF" stroke-width="1.3"/>
+      </svg>
+    </div>
+    <div class="why-text">
+      <p class="eyebrow">Why "Trellis"</p>
+      <h2>A trellis doesn't cage what's growing. It gives it something to climb.</h2>
+      <p>A trellis gives structure to something that would otherwise grow wild and tangled &ndash; without slowing the growth down. That's the work: taking data that's outgrown its systems and building the structure that lets it keep growing cleanly, instead of sprawling into chaos.</p>
+      <p><strong>Different industries, same shape of problem</strong> &ndash; relationship-heavy records, entered by different people over different years, about to meet a system that expects them to be consistent.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p class="eyebrow">Get started</p>
+  <h2>Start with the audit.</h2>
+  <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
+
+  <div class="who" id="whoBlock">
+    <div class="photo"><img src="images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
+    <div class="who-text">
+      <b>Abbey</b>
+      You'll be on the call with the person doing the work.
+    </div>
+  </div>
+
+  <div class="cal-wrap">
+    <div id="my-cal-inline"></div>
+  </div>
+  <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
+
+  <div class="foot-bar">
+    <span class="mark-wrap">
+      <svg class="mark" width="34" height="34" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="1" y="1" width="42" height="42" rx="12" fill="none" stroke="rgba(255,255,255,0.3)"/>
+        <g stroke="#C7D6EA" stroke-width="2" stroke-linecap="round" opacity="0.9">
+          <line x1="6" y1="6" x2="38" y2="38"/><line x1="6" y1="18" x2="26" y2="38"/><line x1="18" y1="6" x2="38" y2="26"/>
+        </g>
+        <g stroke="#9FC28F" stroke-width="2" stroke-linecap="round">
+          <line x1="38" y1="6" x2="6" y2="38"/><line x1="38" y1="18" x2="18" y2="38"/><line x1="26" y1="6" x2="6" y2="26"/>
+        </g>
+      </svg>
+      <span class="wordmark" style="font-size:16px;"><span class="main">Trellis</span><span class="sub">Data Partners</span></span>
+    </span>
+    <p class="foot-meta">Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
+  </div>
+  <p class="credit">Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></p>
+  <p class="credit"><a href="faq/index.html">FAQ</a> &middot; <a href="terms/index.html">Terms of Service</a> &middot; <a href="privacy/index.html">Privacy Policy</a></p>
+</footer>
+
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal; let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {}; cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", { origin: "https://app.cal.com" });
+  Cal("inline", {
+    elementOrSelector: "#my-cal-inline",
+    calLink: "abbey-ndp",
+    config: { theme: "light" }
+  });
+  Cal("ui", {
+    styles: { branding: { brandColor: "#04285C" } },
+    hideEventTypeDetails: false
+  });
+</script>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  navToggle.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  navMenu.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+    }
+  });
+
+  document.querySelectorAll('.has-dropdown').forEach(dd => {
+    const ddToggle = dd.querySelector('.dropdown-toggle');
+    ddToggle.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      const open = dd.classList.toggle('open');
+      ddToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.has-dropdown.open').forEach(dd => {
+      if (!dd.contains(e.target)) {
+        dd.classList.remove('open');
+        dd.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  const ledger = document.getElementById('ledger');
+  const sigState = document.getElementById('sigState');
+  const flags = document.getElementById('ledgerFlags');
+  const toggleBtn = document.getElementById('sigToggle');
+  let isClean = false;
+
+  toggleBtn.addEventListener('click', () => {
+    isClean = !isClean;
+    ledger.classList.toggle('is-clean', isClean);
+    sigState.textContent = isClean ? 'AFTER' : 'BEFORE';
+    flags.textContent = isClean ? '0 flagged · 558 merged' : '1,412 flagged';
+    toggleBtn.textContent = isClean ? 'Show the mess again' : 'Watch it get cleaned up';
+  });
+</script>
+
+<script src="wordmark.js"></script>
+<script src="scrollspy.js"></script>
+</body>
+</html>
