@@ -342,7 +342,7 @@
 </section>
 
 <div class="scallop" style="--scallop-color:#021A3E; height:16px; background:var(--scallop-color); -webkit-mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; position:relative; z-index:3;"></div>
-<section id="testimonials">
+<section id="testimonials" style="display:none;">
   <div class="wrap">
     <p class="eyebrow">In their words</p>
     <h2>Ask the people who handed over the mess.</h2>
@@ -351,6 +351,9 @@
       fetch('data/testimonials.json')
         .then(r => r.json())
         .then(data => {
+          const section = document.getElementById('testimonials');
+          if (!data.visible) return;
+          section.style.display = '';
           const grid = document.getElementById('testiGrid');
           grid.innerHTML = (data.items || []).map(t => `
             <div class="testi-card">

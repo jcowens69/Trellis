@@ -16,6 +16,11 @@ collections:
         name: "testimonials"
         file: "data/testimonials.json"
         fields:
+          - label: "Show this section on the homepage?"
+            name: "visible"
+            widget: "boolean"
+            default: false
+            hint: "Turn this on once you have real testimonials ready to publish."
           - label: "Testimonials"
             name: "items"
             widget: "list"
