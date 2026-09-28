@@ -440,31 +440,22 @@ nav .mark { width: 72px; height: 72px; }
   .hero-inner { grid-template-columns: 1fr; gap: 44px; padding: 48px 28px 60px; }
 }
 
-/* Growing-vine flourish above the hero headline */
+/* Headline-as-artwork: a vine woven through the hero headline, desktop only.
+   The real <h1> stays in the DOM (and visible) for mobile and for
+   accessibility/SEO; on desktop it's swapped for the illustrated version. */
 .hero-copy { position: relative; }
-.vine-grow { display: block; margin: 0 0 6px -4px; }
-.vine-grow #vinePath {
-  stroke-dasharray: 420;
-  stroke-dashoffset: 420;
-  animation: vineDraw 2.6s ease-out forwards;
-}
-.vine-grow .vine-leaf,
-.vine-grow .vine-tendril {
-  opacity: 0;
-  transform-origin: center;
-  animation: leafPop 0.6s ease-out forwards;
-}
-@keyframes vineDraw { to { stroke-dashoffset: 0; } }
-@keyframes leafPop {
-  from { opacity: 0; transform: scale(0.3); }
-  to { opacity: 1; transform: scale(1); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .vine-grow #vinePath { animation: none; stroke-dashoffset: 0; }
-  .vine-grow .vine-leaf, .vine-grow .vine-tendril { animation: none; opacity: 1; transform: none; }
-}
-@media (max-width: 700px) {
-  .vine-grow { width: 40px; height: 138px; }
+.hero-headline-art { display: none; }
+@media (min-width: 701px) {
+  .hero-headline-art { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 0 22px; }
+  .hero-copy > h1 {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 }
 
 /* ── Signature: the record ledger ─────────────────────── */
