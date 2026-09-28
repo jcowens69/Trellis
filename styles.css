@@ -440,23 +440,7 @@ nav .mark { width: 72px; height: 72px; }
   .hero-inner { grid-template-columns: 1fr; gap: 44px; padding: 48px 28px 60px; }
 }
 
-/* Headline-as-artwork: a vine woven through the hero headline, desktop only.
-   The real <h1> stays in the DOM (and visible) for mobile and for
-   accessibility/SEO; on desktop it's swapped for the illustrated version. */
 .hero-copy { position: relative; }
-.hero-headline-art { display: none; }
-@media (min-width: 701px) {
-  .hero-headline-art { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 0 22px; }
-  .hero-copy > h1 {
-    position: absolute;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-}
 
 /* ── Signature: the record ledger ─────────────────────── */
 .hero-inner > *, .problem-grid > * { min-width: 0; }
