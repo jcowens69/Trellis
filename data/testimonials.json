@@ -1,12 +1,12 @@
 {
   "items": [
     {
-      "quote": "Placeholder – a specific line from a nonprofit client: what the audit found, or what changed after the migration. A number or a saved deadline beats a general compliment.",
-      "name": "Name, Title",
-      "org": "Organization",
-      "initials": "AB",
-      "color": "#4E7145",
-      "placeholder": true
+      "quote": "Abbey is amazing at what she does...no one can handle our data better than her! ",
+      "name": "Jeff, CEO",
+      "org": "CCL",
+      "initials": "JC",
+      "color": "#4C70A0",
+      "placeholder": false
     },
     {
       "quote": "Placeholder – a line from a law firm client about client/matter records getting untangled, or a migration that stayed on budget because of the audit.",
