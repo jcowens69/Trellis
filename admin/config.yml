@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  repo: jcowens69/Trellis
   branch: main
   base_url: https://scintillating-crisp-7f4417.netlify.app
   auth_endpoint: .netlify/functions/auth
