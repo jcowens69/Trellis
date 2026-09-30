@@ -1,18 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 100">
-  <rect x="9" y="4" width="92" height="92" rx="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
-  <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
-    <line x1="20.22" y1="15.22" x2="89.78" y2="84.78"/>
-    <line x1="20.22" y1="42.15" x2="62.85" y2="84.78"/>
-    <line x1="47.15" y1="15.22" x2="89.78" y2="57.85"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 223.25 94">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #4e7145;
+      }
+
+      .st0, .st1 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .st2 {
+        fill: #395430;
+        stroke: #faf6ef;
+        stroke-width: 2.4px;
+      }
+
+      .st1 {
+        stroke: #04285c;
+      }
+
+      .st3, .st4, .st5 {
+        isolation: isolate;
+      }
+
+      .st6 {
+        fill: #faf6ef;
+        stroke: #e4ddd0;
+        stroke-width: 2px;
+      }
+
+      .st7 {
+        opacity: .9;
+      }
+
+      .st4 {
+        fill: #04285c;
+        font-family: Lato-SemiboldItalic, Lato;
+        font-size: 53.51px;
+        font-style: italic;
+        letter-spacing: -.02em;
+      }
+
+      .st4, .st5 {
+        font-weight: 600;
+      }
+
+      .st5 {
+        fill: #55637a;
+        font-family: Lato-Semibold, Lato;
+        font-size: 17px;
+        letter-spacing: .06em;
+      }
+    </style>
+  </defs>
+  <rect class="st6" x="1" y="1" width="92" height="92" rx="22" ry="22"/>
+  <g class="st7">
+    <line class="st1" x1="12.22" y1="12.22" x2="81.78" y2="81.78"/>
+    <line class="st1" x1="12.22" y1="39.15" x2="54.85" y2="81.78"/>
+    <line class="st1" x1="39.15" y1="12.22" x2="81.78" y2="54.85"/>
   </g>
-  <g stroke="#4E7145" stroke-width="4" stroke-linecap="round">
-    <line x1="89.78" y1="15.22" x2="20.22" y2="84.78"/>
-    <line x1="89.78" y1="42.15" x2="47.15" y2="84.78"/>
-    <line x1="62.85" y1="15.22" x2="20.22" y2="57.85"/>
+  <g>
+    <line class="st0" x1="81.78" y1="12.22" x2="12.22" y2="81.78"/>
+    <line class="st0" x1="81.78" y1="39.15" x2="39.15" y2="81.78"/>
+    <line class="st0" x1="54.85" y1="12.22" x2="12.22" y2="54.85"/>
   </g>
-  <circle cx="52.76" cy="60.1" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
-  <circle cx="65.1" cy="45.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
-  <circle cx="78.56" cy="30.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
-  <text transform="translate(127 54.04)" font-family="Arial-BoldMT, Arial, sans-serif" font-weight="700" font-size="53.51" letter-spacing="-1.0702" fill="#04285C"><tspan x="0" y="0">Trellis</tspan></text>
-  <text transform="translate(129.15 83.61)" font-family="ArialMT, Arial, sans-serif" font-size="21.12" letter-spacing="1.29" fill="#55637A"><tspan x="0" y="0">Data Partners</tspan></text>
+  <circle class="st2" cx="44.76" cy="57.1" r="6.06"/>
+  <circle class="st2" cx="57.1" cy="42.51" r="6.06"/>
+  <circle class="st2" cx="70.56" cy="27.93" r="6.06"/>
+  <g class="st3">
+    <text class="st4" transform="translate(98 57.04)"><tspan x="0" y="0">Trellis</tspan></text>
+  </g>
+  <g class="st3">
+    <text class="st5" transform="translate(100.15 76.61) scale(1.03 1)"><tspan x="0" y="0">Data Partners</tspan></text>
+  </g>
 </svg>

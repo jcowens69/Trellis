@@ -44,7 +44,7 @@
   --sans: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --label: "Archivo", "Segoe UI", sans-serif;
-  --logo-font: "Bricolage Grotesque", "Segoe UI", sans-serif; /* logo wordmark only — stays fixed regardless of --display */
+  --logo-font: "Lato", "Segoe UI", sans-serif; /* logo wordmark only — stays fixed regardless of --display */
 
   --wrap: 1120px;
 }
@@ -140,18 +140,19 @@ h2, .section-h1 {
   flex-direction: column;
   align-items: center;
   font-family: var(--logo-font);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.05;
   color: var(--navy);
 }
-.wordmark .main { display: block; }
+.wordmark .main { display: block; font-style: italic; }
 .wordmark .sub {
   display: block;
-  font-family: var(--sans);
-  font-weight: 500;
+  font-family: var(--logo-font);
+  font-weight: 600;
+  font-style: normal;
   font-size: 0.44em;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--ink-soft);
   margin-top: 3px;
   white-space: nowrap;
