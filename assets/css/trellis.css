@@ -301,7 +301,7 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .stage-row { counter-reset: none; }
 .insurance_item { height: 100%; background: var(--cream); border: 1px solid var(--line); padding: 38px 30px; position: relative; }
 .insurance_top_icon { width: 84px; height: 84px; background: var(--sage); color: #fff; }
-.insurance_top_icon svg { width: 36px; height: 36px; }
+.insurance_top_icon svg { width: 68px; height: 68px; }
 .insurance_item h4 { margin: 26px 0 10px; font-size: 24px; }
 .insurance_item p { margin: 0; font-size: 16px; line-height: 1.6; }
 .stage-arrow { position: absolute; top: 74px; right: -22px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; background: var(--paper); border: 1px solid var(--line); display: grid; place-items: center; color: var(--sage); }
