@@ -176,6 +176,11 @@ a:hover { color: var(--sage); }
   .t-hero .ledger-stack { margin-top: 56px; }
 }
 @media (max-width: 575px) { .t-hero h1 { font-size: 40px; } .t-hero .lede { font-size: 17px; } }
+/* Phones: the before/after demo is dropped; the hero is copy + CTA only. */
+@media (max-width: 767px) {
+  .t-hero .ledger-stack, .t-hero::before { display: none; }
+  .t-hero { padding: 48px 0 64px; }
+}
 
 /* Floating mark badge on the ledger, in the spot the template uses for its "Stay Safe" badge */
 .hero-badge {
