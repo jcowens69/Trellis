@@ -539,3 +539,4 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .site-logo { display: block; height: 60px; width: auto; overflow: visible; }
 .footer-brand .site-logo { height: 58px; }
 @media (max-width: 991px) { .site-header .site-logo { height: 48px; } }
+.t-faq-after { margin-top: 44px; }
