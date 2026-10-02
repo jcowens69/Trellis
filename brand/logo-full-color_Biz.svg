@@ -45,15 +45,15 @@
         stroke-width: 2px;
       }
 
-      .st7 {
-        opacity: .9;
-      }
-
       .st4 {
         fill: #55637a;
         font-family: Lato-Semibold, Lato;
-        font-size: 22.25px;
+        font-size: 20px;
         letter-spacing: .06em;
+      }
+
+      .st7 {
+        opacity: .9;
       }
     </style>
   </defs>
@@ -78,7 +78,7 @@
   </g>
   <g class="st3">
     <g class="st3">
-      <text class="st4" transform="translate(102.09 86.83) scale(1.03 1)"><tspan x="0" y="0">Data Partners</tspan></text>
+      <text class="st4" transform="translate(106.09 86.83) scale(1.03 1)"><tspan x="0" y="0">for Businesses</tspan></text>
     </g>
   </g>
 </svg>

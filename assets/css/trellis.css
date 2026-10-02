@@ -531,3 +531,7 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 /* Migration Management "How it runs": whiteboard photo under a navy tint */
 .band-photo-how::before { background-image: url("../../images/migration-how.jpg"); opacity: 1; }
 .band-photo-how::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(2,26,62,.93) 0%, rgba(2,26,62,.84) 55%, rgba(2,26,62,.72) 100%); }
+/* Logos: the brand-folder SVGs, inlined so their Lato text uses the page's web font */
+.site-logo { display: block; height: 60px; width: auto; overflow: visible; }
+.footer-brand .site-logo { height: 58px; }
+@media (max-width: 991px) { .site-header .site-logo { height: 48px; } }
