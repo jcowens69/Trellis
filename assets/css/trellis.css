@@ -3,6 +3,10 @@
    Load order: bootstrap → ensurx.css → ensurx-media.css → trellis.css
    ========================================================================== */
 
+/* Lato Semibold, self-hosted: the weight the logo files in /brand specify (Google Fonts doesn't serve it) */
+@font-face { font-family: "Lato"; font-style: normal; font-weight: 600; font-display: block; src: url("../fonts/lato-semibold.woff2") format("woff2"); }
+@font-face { font-family: "Lato"; font-style: italic; font-weight: 600; font-display: block; src: url("../fonts/lato-semibold-italic.woff2") format("woff2"); }
+
 :root {
   /* Brand */
   --navy: #04285C;

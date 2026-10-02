@@ -1,0 +1,11 @@
+Lato Semibold and Lato Semibold Italic (lato-semibold.woff2, lato-semibold-italic.woff2)
+
+Copyright (c) 2011-2015 by tyPoland Lukasz Dziedzic (http://www.typoland.com/)
+with Reserved Font Name "Lato".
+
+Licensed under the SIL Open Font License, Version 1.1.
+Full license text: https://openfontlicense.org/open-font-license-official-text/
+
+Source: Lato 2.0, from the lato-font npm package v3.0.0. These files are
+subset to Latin characters for the web; they are used to render the Trellis
+logo wordmark, whose SVG files in /brand specify Lato Semibold.
