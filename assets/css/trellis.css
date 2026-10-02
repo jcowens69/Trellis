@@ -392,3 +392,13 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
   .svc-card { padding: 28px 22px; }
   .cta-card { padding: 30px 20px; }
 }
+
+/* Sections that sit on dark bands */
+.on-dark .common_heading .lede-under, .on-dark .stage-intro { color: #D5DDE8; }
+.on-dark .service_page_item { border-color: transparent; }
+.on-dark .service_page_item:hover, .on-dark .service_page_item:hover::before { background: var(--sage-deep); }
+.on-dark .service_page_item:hover p { color: #E3EBDD; }
+.on-dark .service_page_item:hover .arrow-link { color: #fff; }
+.on-dark .service_page_item:hover .service_page_item_top h2 { -webkit-text-stroke-color: #fff; }
+.band-photo .insurance_item { border-color: transparent; box-shadow: var(--shadow-deep); }
+.band-photo .stage-arrow { border-color: transparent; }
