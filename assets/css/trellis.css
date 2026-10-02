@@ -525,3 +525,6 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .on-dark .problem-text { color: #D5DDE8; }
 .on-dark .problem-text strong { color: #fff; }
 .stat-strip + .t-faq { margin-top: 32px; }
+.page-banner .banner-link { display: inline-block; margin: 22px 0 0 70px; color: var(--sage-light); font-size: 17px; }
+.page-banner .banner-link:hover { color: #fff; }
+@media (max-width: 575px) { .page-banner .banner-link { margin-left: 0; } }
