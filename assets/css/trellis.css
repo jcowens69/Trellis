@@ -528,3 +528,6 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .page-banner .banner-link { display: inline-block; margin: 22px 0 0 70px; color: var(--sage-light); font-size: 17px; }
 .page-banner .banner-link:hover { color: #fff; }
 @media (max-width: 575px) { .page-banner .banner-link { margin-left: 0; } }
+/* Migration Management "How it runs": whiteboard photo under a navy tint */
+.band-photo-how::before { background-image: url("../../images/migration-how.jpg"); opacity: 1; }
+.band-photo-how::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(2,26,62,.93) 0%, rgba(2,26,62,.84) 55%, rgba(2,26,62,.72) 100%); }
