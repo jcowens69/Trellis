@@ -25,7 +25,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Lato:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/icons/iconly.min.css">
+<link rel="stylesheet" href="../assets/css/ensurx.css">
+<link rel="stylesheet" href="../assets/css/ensurx-media.css">
+<link rel="stylesheet" href="../assets/css/trellis.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,11 +66,11 @@
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="../index.html" aria-label="Trellis Data Partners home">
-      <span class="mark-wrap">
-        <svg class="mark" width="72" height="72" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+        <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="1" y="1" width="92" height="92" rx="22" ry="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
           <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
             <line x1="12.22" y1="12.22" x2="81.78" y2="81.78"/><line x1="12.22" y1="39.15" x2="54.85" y2="81.78"/><line x1="39.15" y1="12.22" x2="81.78" y2="54.85"/>
@@ -78,140 +82,203 @@
           <circle cx="57.1" cy="42.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
           <circle cx="70.56" cy="27.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
         </svg>
-        <span class="wordmark nav-wordmark"><span class="main">Trellis</span> <span class="sub">for Real Estate</span></span>
-      </span>
-    </a>
-    <ul class="nav-links" id="navMenu">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../migration-management/index.html">Migration Management</a></li>
-      <li><a href="../faq/index.html">FAQ</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
+        <span class="wordmark"><span class="main">Trellis</span> <span class="sub">for Real Estate</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="nav-cta-wrap">
-        <a class="cta-small" href="#contact">Book Your Data Audit</a>
-        <span class="nav-cta-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav mx-auto" id="navMenu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="../index.html#industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Help</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../nonprofit/index.html">Nonprofit organizations</a></li>
+              <li><a class="dropdown-item" href="../legal/index.html">Law firms</a></li>
+              <li><a class="dropdown-item" href="../real-estate/index.html">Real estate</a></li>
+              <li><a class="dropdown-item" href="../business/index.html">Growing businesses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html#svc-audit">Data Health Audit</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-prep">Data Migration Prep</a></li>
+              <li><a class="dropdown-item" href="../migration-management/index.html">Migration Management</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-post">Post-Migration Assistance</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-ongoing">Ongoing Data Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../security/index.html">Data Security</a></li>
+          <li class="nav-item"><a class="nav-link" href="../faq/index.html">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="common_btn" href="#contact">Book Your Data Audit</a>
+          <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+        </div>
       </div>
     </div>
+  </nav>
+</header>
+
+<main>
+
+<section id="milestones" class="page-banner band-photo on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Same process, applied to your data</p></div>
+          <h1>The best time to call is <span>before they think to call you.</span></h1>
+        </div>
+        <div class="lede-icon"><span class="ico"><svg fill="none" height="22" stroke="#4E7145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9"></path></svg></span><p>We structure records so the moments that matter surface on their own, wherever that data lives. For an agent, that means a home anniversary, a lease coming up for renewal, or a listing that expired with someone else six months ago. None of that requires us to know real estate the way you do. It requires the data to be structured well enough that the moment doesn't get buried in an old spreadsheet.</p></div>
+        <div class="stat-strip" aria-label="Time-based milestones">
+          <div class="stat"><span class="num">1YR</span><span class="lbl">Home anniversary</span></div>
+          <div class="stat"><span class="num">3YR</span><span class="lbl">Refinance window opens</span></div>
+          <div class="stat"><span class="num">5YR</span><span class="lbl">Average time to reconsider selling</span></div>
+          <div class="stat"><span class="num">60D</span><span class="lbl">Before lease renewal</span></div>
+          <div class="stat"><span class="num">90D</span><span class="lbl">Before listing expires</span></div>
+        </div>
   </div>
-</nav>
+</section>
 
-<section id="milestones">
-  <div class="wrap">
-    <p class="eyebrow">Same process, applied to your data</p>
-    <h1 class="section-h1">The best time to call is before they think to call you.</h1>
-    <div class="milestone-lede">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4E7145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9"/></svg>
-      <p class="section-lede" style="margin:0;">We structure records so the moments that matter surface on their own, wherever that data lives. For an agent, that means a home anniversary, a lease coming up for renewal, or a listing that expired with someone else six months ago. None of that requires us to know real estate the way you do. It requires the data to be structured well enough that the moment doesn't get buried in an old spreadsheet.</p>
-    </div>
+<section class="section section-cream pull-up">
+  <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">01</span><h3>Growing families</h3><p>Flagged when household size changes, before the "we need more space" conversation happens without you.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">02</span><h3>Empty nesters</h3><p>A change in family size cuts the other way too &ndash; downsizing conversations start years before the "For Sale" sign goes up.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">03</span><h3>Expired &amp; withdrawn listings</h3><p>Yours or a competitor's &ndash; a listing that didn't sell is a warm lead, not a dead one, if you know it exists.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">04</span><h3>Out-of-area moves</h3><p>A past client relocating out of state is a referral fee waiting to happen, if the record still says where they moved.</p></div></div>
+        </div>
+  </div>
+</section>
 
-    <div class="age-row" aria-label="Time-based milestones">
-      <div class="age-badge"><span class="num">1YR</span><span class="lbl">Home anniversary</span></div>
-      <div class="age-badge"><span class="num">3YR</span><span class="lbl">Refinance window opens</span></div>
-      <div class="age-badge"><span class="num">5YR</span><span class="lbl">Average time to reconsider selling</span></div>
-      <div class="age-badge"><span class="num">60D</span><span class="lbl">Before lease renewal</span></div>
-      <div class="age-badge"><span class="num">90D</span><span class="lbl">Before listing expires</span></div>
-    </div>
+<section id="referrals" class="section band-dark on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Beyond the transaction</p></div>
+          <h2>Your past clients are your best lead list &ndash; <span>if you can still find them.</span></h2>
+        </div>
+        <div class="lede-icon"><span class="ico"><svg fill="none" height="22" stroke="#4E7145" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></span><p>The transaction ends, but the relationship is where the referrals come from. When a closed deal becomes a dead record instead of a maintained relationship, the agent loses the repeat business, the referral, and the review &ndash; without ever knowing they were on the table.</p></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">01</span><h3>Repeat-client history</h3><p>Every past transaction linked to the client, so the fact that you sold them their first house shows up when they're ready for their second.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">02</span><h3>Referral source tracking</h3><p>Which past client, agent, or lender sent you your last five deals &ndash; tracked like the pipeline it is, not remembered from memory.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">03</span><h3>Household &amp; family connections</h3><p>A client's adult kids, siblings, and parents connected as one network, since real estate referrals travel through family faster than almost any other channel.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">04</span><h3>Sphere-of-influence contacts</h3><p>Past clients, vendors, and community contacts who aren't "leads" in the traditional sense, but are exactly who your business actually runs on.</p></div></div>
+        </div>
+        <p class="fine-note">Whether your team runs on Follow Up Boss, kvCORE, Chime, or a spreadsheet pulled from the MLS, the underlying data cleanup and CRM data migration work is the same.</p>
+  </div>
+</section>
 
-    <div class="check-grid">
-      <div class="check"><span class="check-idx">01</span><h3>Growing families</h3><p>Flagged when household size changes, before the "we need more space" conversation happens without you.</p></div>
-      <div class="check"><span class="check-idx">02</span><h3>Empty nesters</h3><p>A change in family size cuts the other way too &ndash; downsizing conversations start years before the "For Sale" sign goes up.</p></div>
-      <div class="check"><span class="check-idx">03</span><h3>Expired &amp; withdrawn listings</h3><p>Yours or a competitor's &ndash; a listing that didn't sell is a warm lead, not a dead one, if you know it exists.</p></div>
-      <div class="check"><span class="check-idx">04</span><h3>Out-of-area moves</h3><p>A past client relocating out of state is a referral fee waiting to happen, if the record still says where they moved.</p></div>
+<section id="whats-next" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading text-center">
+          <div class="title_style"><span></span><p>What's next</p></div>
+          <h2>Three places to <span>go from here.</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4"><a class="next-card" href="../migration-management/index.html">
+            <span class="next-icon"><svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
+            <h3>Migration Management</h3>
+            <p>Choosing a platform is only step one. See how much of the build we can take off your plate.</p>
+            <span class="arrow-link">See how it works &rarr;</span>
+          </a></div>
+          <div class="col-lg-4"><a class="next-card" href="../security/index.html">
+            <span class="next-icon"><svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26"><path d="M12 2 4 6v6c0 5 3.4 9.2 8 10 4.6-.8 8-5 8-10V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+            <h3>Data Security</h3>
+            <p>Every file moves through a dedicated secure portal, not an inbox. Here's exactly how.</p>
+            <span class="arrow-link">See how data moves &rarr;</span>
+          </a></div>
+          <div class="col-lg-4"><a class="next-card" href="../contact/index.html">
+            <span class="next-icon"><svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26"><rect height="18" rx="2" width="18" x="3" y="4"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg></span>
+            <h3>Schedule a Chat</h3>
+            <p>One conversation is all it takes to get a real number for what your data actually needs.</p>
+            <span class="arrow-link">Book a time &rarr;</span>
+          </a></div>
+        </div>
+  </div>
+</section>
+
+<section id="contact" class="cta-section">
+  <div class="container-fluid">
+    <div class="cta-card">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="common_heading mb-3">
+            <div class="title_style"><span></span><h3>Get started</h3></div>
+            <h2>Start with <span>the audit.</span></h2>
+          </div>
+          <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="who" id="whoBlock">
+            <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
+            <div class="who-text">
+              <div class="who-name">Abbey Cowens</div>
+              <div class="who-title">Founder &amp; Principal</div>
+              <p>You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cal-wrap">
+        <div id="my-cal-inline"></div>
+      </div>
+      <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
     </div>
   </div>
 </section>
 
-<section id="referrals" class="alt-paper">
-  <div class="wrap">
-    <p class="eyebrow">Beyond the transaction</p>
-    <h2>Your past clients are your best lead list &ndash; if you can still find them.</h2>
-    <div class="milestone-lede">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4E7145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-      <p class="section-lede" style="margin:0;">The transaction ends, but the relationship is where the referrals come from. When a closed deal becomes a dead record instead of a maintained relationship, the agent loses the repeat business, the referral, and the review &ndash; without ever knowing they were on the table.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row gy-5">
+      <div class="col-lg-4 footer-brand">
+        <a class="brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+          <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9"><line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/></g>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round"><line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/></g>
+            <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/><circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/><circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
+          </svg>
+          <span class="wordmark"><span class="main">Trellis</span> <span class="sub">for Real Estate</span></span>
+        </a>
+        <p>Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h4>Who We Help</h4>
+        <ul>
+          <li><a href="../nonprofit/index.html">Nonprofit organizations</a></li>
+          <li><a href="../legal/index.html">Law firms</a></li>
+          <li><a href="../real-estate/index.html">Real estate</a></li>
+          <li><a href="../business/index.html">Growing businesses</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../nonprofit/audit/index.html">Data Health Audit</a></li>
+          <li><a href="../migration-management/index.html">Migration Management</a></li>
+          <li><a href="../security/index.html">Data Security</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../index.html#contact">Book Your Data Audit</a></li>
+          <li><a href="../contact/index.html">Schedule a Chat</a></li>
+          <li><a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="check-grid">
-      <div class="check"><span class="check-idx">01</span><h3>Repeat-client history</h3><p>Every past transaction linked to the client, so the fact that you sold them their first house shows up when they're ready for their second.</p></div>
-      <div class="check"><span class="check-idx">02</span><h3>Referral source tracking</h3><p>Which past client, agent, or lender sent you your last five deals &ndash; tracked like the pipeline it is, not remembered from memory.</p></div>
-      <div class="check"><span class="check-idx">03</span><h3>Household &amp; family connections</h3><p>A client's adult kids, siblings, and parents connected as one network, since real estate referrals travel through family faster than almost any other channel.</p></div>
-      <div class="check"><span class="check-idx">04</span><h3>Sphere-of-influence contacts</h3><p>Past clients, vendors, and community contacts who aren't "leads" in the traditional sense, but are exactly who your business actually runs on.</p></div>
-    </div>
-    <p class="svc-note">Whether your team runs on Follow Up Boss, kvCORE, Chime, or a spreadsheet pulled from the MLS, the underlying data cleanup and CRM data migration work is the same.</p>
-  </div>
-</section>
-
-<div class="scallop" style="--scallop-color:#021A3E; height:16px; background:var(--scallop-color); -webkit-mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; mask:radial-gradient(circle at 9px 0px, transparent 9px, #000 9.3px) 0 0/18px 18px repeat-x; position:relative; z-index:3;"></div>
-<section id="whats-next">
-  <div class="wrap">
-    <p class="eyebrow">What's next</p>
-    <h2>Three places to go from here.</h2>
-    <div class="next-grid">
-      <a class="next-card" href="../migration-management/index.html">
-        <span class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
-        <h3>Migration Management</h3>
-        <p>Choosing a platform is only step one. See how much of the build we can take off your plate.</p>
-        <span class="next-link">See how it works &rarr;</span>
-      </a>
-      <a class="next-card" href="../security/index.html">
-        <span class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.2 8 10 4.6-.8 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <h3>Data Security</h3>
-        <p>Every file moves through a dedicated secure portal, not an inbox. Here's exactly how.</p>
-        <span class="next-link">See how data moves &rarr;</span>
-      </a>
-      <a class="next-card" href="../contact/index.html">
-        <span class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-        <h3>Schedule a Chat</h3>
-        <p>One conversation is all it takes to get a real number for what your data actually needs.</p>
-        <span class="next-link">Book a time &rarr;</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <p class="eyebrow">Get started</p>
-  <h2>Start with the audit.</h2>
-  <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
-
-  <div class="who" id="whoBlock">
-    <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
-    <div class="who-text">
-      <b>Abbey Cowens</b>
-      Founder &amp; Principal
-      <p style="margin:10px 0 0;">You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
+    <div class="footer-bottom">
+      <span>Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></span>
+      <span class="legal"><a href="../faq/index.html">FAQ</a><a href="../terms/index.html">Terms of Service</a><a href="../privacy/index.html">Privacy Policy</a></span>
     </div>
   </div>
-
-  <div class="cal-wrap">
-    <div id="my-cal-inline"></div>
-  </div>
-  <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
-
-  <div class="foot-bar">
-    <span class="mark-wrap">
-      <svg class="mark" width="34" height="34" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9">
-          <line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/>
-        </g>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round">
-          <line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/>
-        </g>
-        <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/>
-        <circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/>
-        <circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
-      </svg>
-      <span class="wordmark" style="font-size:16px;"><span class="main">Trellis</span> <span class="sub">for Real Estate</span></span>
-    </span>
-    <p class="foot-meta">Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
-  </div>
-  <p class="credit">Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></p>
-  <p class="credit"><a href="../faq/index.html">FAQ</a> &middot; <a href="../terms/index.html">Terms of Service</a> &middot; <a href="../privacy/index.html">Privacy Policy</a></p>
 </footer>
 
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
   (function (C, A, L) {
     let p = function (a, ar) { a.q.push(ar); };
@@ -248,43 +315,15 @@
     hideEventTypeDetails: false
   });
 </script>
-
 <script>
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-  navToggle.addEventListener('click', () => {
-    const open = navMenu.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
-  navMenu.addEventListener('click', e => {
-    if (e.target.tagName === 'A') {
-      navMenu.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open menu');
-    }
-  });
-
-  document.querySelectorAll('.has-dropdown').forEach(dd => {
-    const ddToggle = dd.querySelector('.dropdown-toggle');
-    ddToggle.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      const open = dd.classList.toggle('open');
-      ddToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-  document.addEventListener('click', e => {
-    document.querySelectorAll('.has-dropdown.open').forEach(dd => {
-      if (!dd.contains(e.target)) {
-        dd.classList.remove('open');
-        dd.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-      }
-    });
+  // Close the mobile menu after tapping a link.
+  const siteNav = document.getElementById('siteNav');
+  siteNav.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a || a.matches('[data-bs-toggle]') || !siteNav.classList.contains('show')) return;
+    bootstrap.Collapse.getOrCreateInstance(siteNav).hide();
   });
 </script>
-
 <script src="../wordmark.js"></script>
-<script src="../scrollspy.js"></script>
 </body>
 </html>

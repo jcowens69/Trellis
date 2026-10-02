@@ -25,7 +25,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Lato:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/icons/iconly.min.css">
+<link rel="stylesheet" href="../assets/css/ensurx.css">
+<link rel="stylesheet" href="../assets/css/ensurx-media.css">
+<link rel="stylesheet" href="../assets/css/trellis.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,11 +49,11 @@
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="../index.html" aria-label="Trellis Data Partners home">
-      <span class="mark-wrap">
-        <svg class="mark" width="72" height="72" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+        <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="1" y="1" width="92" height="92" rx="22" ry="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
           <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
             <line x1="12.22" y1="12.22" x2="81.78" y2="81.78"/><line x1="12.22" y1="39.15" x2="54.85" y2="81.78"/><line x1="39.15" y1="12.22" x2="81.78" y2="54.85"/>
@@ -61,156 +65,219 @@
           <circle cx="57.1" cy="42.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
           <circle cx="70.56" cy="27.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
         </svg>
-        <span class="wordmark nav-wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-      </span>
-    </a>
-    <ul class="nav-links" id="navMenu">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../faq/index.html">FAQ</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
+        <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="nav-cta-wrap">
-        <a class="cta-small" href="../index.html#contact">Book Your Data Audit</a>
-        <span class="nav-cta-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav mx-auto" id="navMenu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Help</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../nonprofit/index.html">Nonprofit organizations</a></li>
+              <li><a class="dropdown-item" href="../legal/index.html">Law firms</a></li>
+              <li><a class="dropdown-item" href="../real-estate/index.html">Real estate</a></li>
+              <li><a class="dropdown-item" href="../business/index.html">Growing businesses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="../index.html#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html#svc-audit">Data Health Audit</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-prep">Data Migration Prep</a></li>
+              <li><a class="dropdown-item" href="../migration-management/index.html">Migration Management</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-post">Post-Migration Assistance</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-ongoing">Ongoing Data Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../security/index.html">Data Security</a></li>
+          <li class="nav-item"><a class="nav-link" href="../faq/index.html">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="common_btn" href="../index.html#contact">Book Your Data Audit</a>
+          <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+        </div>
       </div>
     </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-banner band-photo on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Migration Management</p></div>
+          <h1>As involved as you want us to be. <span>Seed to bloom, and everywhere in between.</span></h1>
+        </div>
+        <p class="banner-lede">Choosing a new system is only step one. Someone still has to gather requirements, manage the build, and keep the software implementer accountable while your team keeps doing its actual job. We can do all of it, some of it, or just the parts you don't want &ndash; you set the level.</p>
+        <a class="common_btn" href="../index.html#contact">Book Your Data Audit <i class="ensurx-arrow-right"></i></a>
+        <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
   </div>
-</nav>
+</section>
 
-<div class="hero hero-photo-bg" style="--hero-bg-photo: url('../images/migration-hero.jpg');">
-  <div class="hero-inner hero-solo">
-    <div>
-      <p class="eyebrow">Migration Management</p>
-      <h1>As involved as you want us to be. Seed to bloom, and everywhere in between.</h1>
-      <p class="lede">Choosing a new system is only step one. Someone still has to gather requirements, manage the build, and keep the software implementer accountable while your team keeps doing its actual job. We can do all of it, some of it, or just the parts you don't want &ndash; you set the level.</p>
-      <a class="btn btn-sage" href="../index.html#contact">Book Your Data Audit</a>
-      <span class="hero-note">Fixed-fee diagnostic. No commitment beyond it.</span>
-    </div>
+<section id="stages" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading text-center">
+          <div class="title_style"><span></span><p>How involved we get</p></div>
+          <h2>Pick the level that fits your team, <span>not the other way around.</span></h2>
+        </div>
+        <p class="section-intro">Most firms don't want the same amount of help on every project &ndash; and the right level for a small, contained migration isn't the right level for a full platform switch. These four are reference points, not a menu you're locked into.</p>
+        <div class="row g-4 stage-row">
+          <div class="col-md-6 col-lg-3">
+            <div class="insurance_item">
+              <div class="insurance_top_icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 41h30" opacity=".55"/><ellipse cx="24" cy="37" rx="3.6" ry="2.6" fill="currentColor"/></svg></div>
+              <p class="stage-name">Seed</p>
+              <h4>Advisory only</h4>
+              <p>You run the project. We're a sounding board when you need one &ndash; including help choosing a database &ndash; without taking the wheel.</p>
+              <span class="stage-arrow" aria-hidden="true"><i class="ensurx-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="insurance_item">
+              <div class="insurance_top_icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 41h30" opacity=".55"/><path d="M24 41V31"/><path d="M24 33c0-3.6 3-5.6 6.4-5-0.6 3.6-3 5.4-6.4 5Z" fill="currentColor"/><path d="M24 35c0-3-2.4-4.8-5.4-4.3 0.5 3 2.6 4.6 5.4 4.3Z" fill="currentColor"/></svg></div>
+              <p class="stage-name">Sprout</p>
+              <h4>Selection &amp; requirements</h4>
+              <p>We help you choose the platform and translate your team's needs into a real spec &ndash; then hand it off for your implementer to build.</p>
+              <span class="stage-arrow" aria-hidden="true"><i class="ensurx-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="insurance_item">
+              <div class="insurance_top_icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 41h30" opacity=".55"/><path d="M24 41V19"/><path d="M24 33c0-4 3.4-6.4 7.6-5.6-0.8 4-3.6 6.2-7.6 5.6Z" fill="currentColor"/><path d="M24 36c0-4-3.4-6.4-7.6-5.6 0.8 4 3.6 6.2 7.6 5.6Z" fill="currentColor"/><path d="M24 24c0-3.6 3-5.6 6.6-5-0.6 3.6-3.2 5.4-6.6 5Z" fill="currentColor"/><path d="M24 27c0-3.6-3-5.6-6.6-5 0.6 3.6 3.2 5.4 6.6 5Z" fill="currentColor"/></svg></div>
+              <p class="stage-name">Grow</p>
+              <h4>Shared ownership</h4>
+              <p>We sit in on every build call, catch what the implementer misses, and keep the project on schedule alongside your team.</p>
+              <span class="stage-arrow" aria-hidden="true"><i class="ensurx-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="insurance_item">
+              <div class="insurance_top_icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 41h30" opacity=".55"/><path d="M24 41V17"/><path d="M24 34c0-4.2 3.6-6.8 8-5.9-0.8 4.2-3.8 6.5-8 5.9Z" fill="currentColor"/><path d="M24 37c0-4.2-3.6-6.8-8-5.9 0.8 4.2 3.8 6.5 8 5.9Z" fill="currentColor"/><path d="M24 27c0-3.4 2.8-5.4 6.2-4.8-0.6 3.4-3 5.2-6.2 4.8Z" fill="currentColor"/><g fill="currentColor" stroke="none"><circle cx="24" cy="6.6" r="3.6"/><circle cx="30" cy="11" r="3.6"/><circle cx="27.7" cy="17.4" r="3.6"/><circle cx="20.3" cy="17.4" r="3.6"/><circle cx="18" cy="11" r="3.6"/></g><circle cx="24" cy="12.2" r="2.6" fill="#FAF6EF" stroke="none"/></svg></div>
+              <p class="stage-name">Bloom</p>
+              <h4>Full ownership</h4>
+              <p>We run point with the software implementer end to end, through 60 days after go-live. Your team joins touch-base calls and answers questions when we need something &ndash; otherwise, it's handled.</p>
+              <span class="stage-arrow" aria-hidden="true"><i class="ensurx-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
   </div>
-</div>
+</section>
 
-<div class="creds"></div>
+<section id="how" class="section band-photo band-photo-how on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>How it runs</p></div>
+          <h2>Three phases, <span>same team throughout.</span></h2>
+        </div>
+        <div class="row gy-5 process-row">
+          <div class="col-md-4"><div class="process-step"><div class="process-num">1</div><h3>Define what you need</h3><p>Sessions with your team to map current data, pick the new platform, and write down what a successful migration actually looks like.</p></div></div>
+          <div class="col-md-4"><div class="process-step"><div class="process-num">2</div><h3>We run the build</h3><p>We work the calls with the software implementer, translate between what your old system did and what the new one needs, and flag decisions that need your input &ndash; and only those.</p></div></div>
+          <div class="col-md-4"><div class="process-step"><div class="process-num">3</div><h3>Handoff &amp; training</h3><p>Your team gets a system that's ready to use, not just technically finished &ndash; plus whatever training or documentation makes the switch stick.</p></div></div>
+        </div>
+        <p class="fine-note">Seed runs month-to-month, for as long as you'd like. Sprout takes 4&ndash;8 weeks to select the platform and complete the build-out spec. Grow runs 3&ndash;6 months, following your implementer's build schedule. Bloom runs 4&ndash;8 months, including 60 days of support after go-live. At Grow and Bloom, your implementer's schedule sets the calendar &ndash; we work within their timeline and flag any data issues early, before they cause delays.</p>
+  </div>
+</section>
 
-<section id="stages">
-  <div class="wrap">
-    <p class="eyebrow">How involved we get</p>
-    <h2>Pick the level that fits your team, not the other way around.</h2>
-    <p class="section-lede">Most firms don't want the same amount of help on every project &ndash; and the right level for a small, contained migration isn't the right level for a full platform switch. These four are reference points, not a menu you're locked into.</p>
+<section id="cost" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>What it costs</p></div>
+          <h2>Scoped to the <span>level you choose.</span></h2>
+        </div>
+        <p class="section-intro">A fixed fee for each phase, quoted after the Data Health Audit and billed in monthly installments. The fee does change by level, since each level includes more of our time and involvement &ndash; but we don't bill hourly, and we never charge a percentage of the build cost. Your fee stays predictable, and our recommendations are never tied to how much you spend on a platform. If the scope changes along the way, we'll agree on it in writing before any additional work begins.</p>
+        <div class="t-faq">
+          <details><summary>Do we still deal with the software implementer directly?</summary><p>At Grow, yes &ndash; we're on every build call alongside your team, so you have an experienced data partner in the room for each decision. At Bloom, we handle the day-to-day calls with your vendor; you'll join only the key decision points, such as kickoff, data-mapping sign-off, testing review, and go-live approval. We'll prepare you ahead of each one so they're quick and focused. It's your database, so the final decisions stay with you.</p></details>
+          <details><summary>Does this replace the audit, or come after it?</summary><p>The audit comes first, and the two don't run at the same time. The audit is how we scope and price your migration work accurately, so you're not paying for guesses. Your audit fee is credited toward Migration Management if you sign within 60 days.</p></details>
+          <details><summary>Can we change involvement levels mid-project?</summary><p>Yes. You can move up a level at the start of any new phase. Moving down also happens at the start of a phase, with 30 days' written notice. Either way, the fee adjusts for the remaining phases, and we'll confirm the change in writing.</p></details>
+        </div>
+  </div>
+</section>
 
-    <div class="stages">
-      <div class="stage">
-        <span class="stage-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="4" ry="5.5"/></svg></span>
-        <p class="stage-name">Seed</p>
-        <h3>Advisory only</h3>
-        <p>You run the project. We're a sounding board when you need one &ndash; including help choosing a database &ndash; without taking the wheel.</p>
+<section id="contact" class="cta-section">
+  <div class="container-fluid">
+    <div class="cta-card">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="common_heading mb-3">
+            <div class="title_style"><span></span><h3>Get started</h3></div>
+            <h2>Start with <span>the audit.</span></h2>
+          </div>
+          <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="who" id="whoBlock">
+            <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
+            <div class="who-text">
+              <div class="who-name">Abbey Cowens</div>
+              <div class="who-title">Founder &amp; Principal</div>
+              <p>You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="stage">
-        <span class="stage-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 11c0-3 3-5 5-4-1 3-2 5-5 4z"/></svg></span>
-        <p class="stage-name">Sprout</p>
-        <h3>Selection &amp; requirements</h3>
-        <p>We help you choose the platform and translate your team's needs into a real spec &ndash; then hand it off for your implementer to build.</p>
+      <div class="cal-wrap">
+        <div id="my-cal-inline"></div>
       </div>
-      <div class="stage">
-        <span class="stage-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V6"/><path d="M12 13c0-3 3-5 5-4-1 3-2 5-5 4z"/><path d="M12 16c0-3-3-5-5-4 1 3 2 5 5 4z"/></svg></span>
-        <p class="stage-name">Grow</p>
-        <h3>Shared ownership</h3>
-        <p>We sit in on every build call, catch what the implementer misses, and keep the project on schedule alongside your team.</p>
-      </div>
-      <div class="stage">
-        <span class="stage-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-6"/><circle cx="12" cy="9" r="2.4"/><circle cx="8.5" cy="11" r="1.6"/><circle cx="15.5" cy="11" r="1.6"/></svg></span>
-        <p class="stage-name">Bloom</p>
-        <h3>Full ownership</h3>
-        <p>We run point with the software implementer end to end, through 60 days after go-live. Your team joins touch-base calls and answers questions when we need something &ndash; otherwise, it's handled.</p>
-      </div>
+      <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
     </div>
   </div>
 </section>
 
-<section id="how" class="alt-dark section-photo" style="--section-photo: url('../images/migration-how.jpg');">
-  <div class="wrap">
-    <p class="eyebrow">How it runs</p>
-    <h2>Three phases, same team throughout.</h2>
-    <div class="process">
-      <div class="step">
-        <span class="step-num">1</span>
-        <div class="step-rule"></div>
-        <h3>Define what you need</h3>
-        <p>Sessions with your team to map current data, pick the new platform, and write down what a successful migration actually looks like.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row gy-5">
+      <div class="col-lg-4 footer-brand">
+        <a class="brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+          <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9"><line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/></g>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round"><line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/></g>
+            <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/><circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/><circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
+          </svg>
+          <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+        </a>
+        <p>Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
       </div>
-      <div class="step">
-        <span class="step-num">2</span>
-        <div class="step-rule"></div>
-        <h3>We run the build</h3>
-        <p>We work the calls with the software implementer, translate between what your old system did and what the new one needs, and flag decisions that need your input &ndash; and only those.</p>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h4>Who We Help</h4>
+        <ul>
+          <li><a href="../nonprofit/index.html">Nonprofit organizations</a></li>
+          <li><a href="../legal/index.html">Law firms</a></li>
+          <li><a href="../real-estate/index.html">Real estate</a></li>
+          <li><a href="../business/index.html">Growing businesses</a></li>
+        </ul>
       </div>
-      <div class="step">
-        <span class="step-num">3</span>
-        <div class="step-rule"></div>
-        <h3>Handoff &amp; training</h3>
-        <p>Your team gets a system that's ready to use, not just technically finished &ndash; plus whatever training or documentation makes the switch stick.</p>
+      <div class="col-6 col-lg-2">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../nonprofit/audit/index.html">Data Health Audit</a></li>
+          <li><a href="../migration-management/index.html">Migration Management</a></li>
+          <li><a href="../security/index.html">Data Security</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../index.html#contact">Book Your Data Audit</a></li>
+          <li><a href="../contact/index.html">Schedule a Chat</a></li>
+          <li><a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></li>
+        </ul>
       </div>
     </div>
-    <p class="lift-note">Seed runs month-to-month, for as long as you'd like. Sprout takes 4&ndash;8 weeks to select the platform and complete the build-out spec. Grow runs 3&ndash;6 months, following your implementer's build schedule. Bloom runs 4&ndash;8 months, including 60 days of support after go-live. At Grow and Bloom, your implementer's schedule sets the calendar &ndash; we work within their timeline and flag any data issues early, before they cause delays.</p>
-  </div>
-</section>
-
-<section id="cost" class="alt-paper">
-  <div class="wrap">
-    <p class="eyebrow">What it costs</p>
-    <h2>Scoped to the level you choose.</h2>
-    <p class="section-lede">A fixed fee for each phase, quoted after the Data Health Audit and billed in monthly installments. The fee does change by level, since each level includes more of our time and involvement &ndash; but we don't bill hourly, and we never charge a percentage of the build cost. Your fee stays predictable, and our recommendations are never tied to how much you spend on a platform. If the scope changes along the way, we'll agree on it in writing before any additional work begins.</p>
-    <div class="faq">
-      <details><summary>Do we still deal with the software implementer directly?</summary><p>At Grow, yes &ndash; we're on every build call alongside your team, so you have an experienced data partner in the room for each decision. At Bloom, we handle the day-to-day calls with your vendor; you'll join only the key decision points, such as kickoff, data-mapping sign-off, testing review, and go-live approval. We'll prepare you ahead of each one so they're quick and focused. It's your database, so the final decisions stay with you.</p></details>
-      <details><summary>Does this replace the audit, or come after it?</summary><p>The audit comes first, and the two don't run at the same time. The audit is how we scope and price your migration work accurately, so you're not paying for guesses. Your audit fee is credited toward Migration Management if you sign within 60 days.</p></details>
-      <details><summary>Can we change involvement levels mid-project?</summary><p>Yes. You can move up a level at the start of any new phase. Moving down also happens at the start of a phase, with 30 days' written notice. Either way, the fee adjusts for the remaining phases, and we'll confirm the change in writing.</p></details>
+    <div class="footer-bottom">
+      <span>Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></span>
+      <span class="legal"><a href="../faq/index.html">FAQ</a><a href="../terms/index.html">Terms of Service</a><a href="../privacy/index.html">Privacy Policy</a></span>
     </div>
   </div>
-</section>
-
-<footer id="contact">
-  <p class="eyebrow">Get started</p>
-  <h2>Start with the audit.</h2>
-  <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
-
-  <div class="who" id="whoBlock">
-    <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
-    <div class="who-text">
-      <b>Abbey Cowens</b>
-      Founder &amp; Principal
-      <p style="margin:10px 0 0;">You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
-    </div>
-  </div>
-
-  <div class="cal-wrap">
-    <div id="my-cal-inline"></div>
-  </div>
-  <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
-
-  <div class="foot-bar">
-    <span class="mark-wrap">
-      <svg class="mark" width="34" height="34" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9">
-          <line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/>
-        </g>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round">
-          <line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/>
-        </g>
-        <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/>
-        <circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/>
-        <circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
-      </svg>
-      <span class="wordmark" style="font-size:16px;"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-    </span>
-    <p class="foot-meta">Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
-  </div>
-  <p class="credit">Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></p>
-  <p class="credit"><a href="../faq/index.html">FAQ</a> &middot; <a href="../terms/index.html">Terms of Service</a> &middot; <a href="../privacy/index.html">Privacy Policy</a></p>
 </footer>
 
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
   (function (C, A, L) {
     let p = function (a, ar) { a.q.push(ar); };
@@ -247,25 +314,15 @@
     hideEventTypeDetails: false
   });
 </script>
-
 <script>
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-  navToggle.addEventListener('click', () => {
-    const open = navMenu.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
-  navMenu.addEventListener('click', e => {
-    if (e.target.tagName === 'A') {
-      navMenu.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open menu');
-    }
+  // Close the mobile menu after tapping a link.
+  const siteNav = document.getElementById('siteNav');
+  siteNav.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a || a.matches('[data-bs-toggle]') || !siteNav.classList.contains('show')) return;
+    bootstrap.Collapse.getOrCreateInstance(siteNav).hide();
   });
 </script>
-
 <script src="../wordmark.js"></script>
-<script src="../scrollspy.js"></script>
 </body>
 </html>
