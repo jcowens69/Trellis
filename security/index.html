@@ -25,15 +25,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Lato:ital,wght@0,600;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/icons/iconly.min.css">
+<link rel="stylesheet" href="../assets/css/ensurx.css">
+<link rel="stylesheet" href="../assets/css/ensurx-media.css">
+<link rel="stylesheet" href="../assets/css/trellis.css">
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="../index.html" aria-label="Trellis Data Partners home">
-      <span class="mark-wrap">
-        <svg class="mark" width="72" height="72" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+        <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="1" y="1" width="92" height="92" rx="22" ry="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
           <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
             <line x1="12.22" y1="12.22" x2="81.78" y2="81.78"/><line x1="12.22" y1="39.15" x2="54.85" y2="81.78"/><line x1="39.15" y1="12.22" x2="81.78" y2="54.85"/>
@@ -45,131 +49,189 @@
           <circle cx="57.1" cy="42.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
           <circle cx="70.56" cy="27.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
         </svg>
-        <span class="wordmark nav-wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-      </span>
-    </a>
-    <ul class="nav-links" id="navMenu">
-      <li><a href="../index.html">Home</a></li>
-      <li class="has-dropdown">
-        <a href="../index.html#industries">Who We Serve</a>
-        <button class="dropdown-toggle" aria-expanded="false" aria-label="Show industries menu">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="../nonprofit/index.html">Nonprofits</a></li>
-          <li><a href="../legal/index.html">Law Firms</a></li>
-          <li><a href="../real-estate/index.html">Real Estate</a></li>
-          <li><a href="../business/index.html">Businesses</a></li>
-        </ul>
-      </li>
-      <li><a href="../migration-management/index.html">Migration Management</a></li>
-      <li><a href="../faq/index.html">FAQ</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
+        <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="nav-cta-wrap">
-        <a class="cta-small" href="../contact/index.html">Book Your Data Audit</a>
-        <span class="nav-cta-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav mx-auto" id="navMenu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Help</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../nonprofit/index.html">Nonprofit organizations</a></li>
+              <li><a class="dropdown-item" href="../legal/index.html">Law firms</a></li>
+              <li><a class="dropdown-item" href="../real-estate/index.html">Real estate</a></li>
+              <li><a class="dropdown-item" href="../business/index.html">Growing businesses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html#svc-audit">Data Health Audit</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-prep">Data Migration Prep</a></li>
+              <li><a class="dropdown-item" href="../migration-management/index.html">Migration Management</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-post">Post-Migration Assistance</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-ongoing">Ongoing Data Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="../security/index.html">Data Security</a></li>
+          <li class="nav-item"><a class="nav-link" href="../faq/index.html">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="common_btn" href="../contact/index.html">Book Your Data Audit</a>
+          <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<div class="hero">
-  <div class="hero-inner hero-solo">
-    <div>
-      <p class="eyebrow">Data Security</p>
-      <h1>Your files never go over email.</h1>
-      <p class="lede">Every export, every mid-project check-in, every handoff moves through a dedicated secure portal instead of an inbox. Here's exactly what that means, and why it's built this way.</p>
-      <a class="btn btn-sage" href="../contact/index.html">Book Your Data Audit</a>
-      <span class="hero-note">Fixed-fee diagnostic. No commitment beyond it.</span>
-    </div>
-  </div>
-</div>
+<main>
 
-<section id="what-it-means">
-  <div class="wrap">
-    <p class="eyebrow">What this actually means</p>
-    <h2>Four things, not just a badge on a footer.</h2>
-    <div class="check-grid">
-      <div class="check"><span class="check-idx">01</span><h3>Encrypted, always</h3><p>In transit, while a file is moving, and at rest, while it's sitting in storage &ndash; every file, every time. An intercepted file is useless to anyone but you.</p></div>
-      <div class="check"><span class="check-idx">02</span><h3>Hosted on SOC 2 Type II audited infrastructure</h3><p>Verified over time, not just a point-in-time snapshot.</p></div>
-      <div class="check"><span class="check-idx">03</span><h3>A full audit trail</h3><p>Every file has a record: who opened it, when, from where. If you ever need to account for where a file went, the answer already exists.</p></div>
-      <div class="check"><span class="check-idx">04</span><h3>Links that expire</h3><p>A shared file doesn't live forever in a sent folder. Access is time-limited, so an old link can't quietly become a liability months later.</p></div>
-    </div>
+<section class="page-banner band-photo on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Data Security</p></div>
+          <h1>Your files never <span>go over email.</span></h1>
+        </div>
+        <p class="banner-lede">Every export, every mid-project check-in, every handoff moves through a dedicated secure portal instead of an inbox. Here's exactly what that means, and why it's built this way.</p>
+        <a class="common_btn" href="../contact/index.html">Book Your Data Audit <i class="ensurx-arrow-right"></i></a>
+        <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
   </div>
 </section>
 
-<section id="why-not-email" class="alt-dark">
-  <div class="wrap">
-    <div class="problem-grid">
-      <div>
-        <p class="eyebrow">Why not just email it?</p>
-        <h2>Attachments don't expire, don't track, and don't stay put.</h2>
+<section id="what-it-means" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>What this actually means</p></div>
+          <h2>Four things, <span>not just a badge on a footer.</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">01</span><h3>Encrypted, always</h3><p>In transit, while a file is moving, and at rest, while it's sitting in storage &ndash; every file, every time. An intercepted file is useless to anyone but you.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">02</span><h3>Hosted on SOC 2 Type II audited infrastructure</h3><p>Verified over time, not just a point-in-time snapshot.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">03</span><h3>A full audit trail</h3><p>Every file has a record: who opened it, when, from where. If you ever need to account for where a file went, the answer already exists.</p></div></div>
+          <div class="col-md-6 col-xl-3"><div class="pt-card"><span class="pt-idx">04</span><h3>Links that expire</h3><p>A shared file doesn't live forever in a sent folder. Access is time-limited, so an old link can't quietly become a liability months later.</p></div></div>
+        </div>
+  </div>
+</section>
+
+<section id="why-not-email" class="section band-dark on-dark">
+  <div class="container-fluid">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-7">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Why not just email it?</p></div>
+          <h2>Attachments don't expire, don't track, <span>and don't stay put.</span></h2>
+        </div>
         <p class="problem-text">An emailed spreadsheet lives in an inbox indefinitely, gets forwarded without anyone's knowledge, isn't encrypted at rest by most email providers, and leaves no record of who actually opened it. None of that is a flaw in email &ndash; email was never built to be a data room. A dedicated portal is.</p>
+          </div>
+          <div class="col-lg-5">
+        <div class="flag-panel flag-panel-static" aria-hidden="true">
+            <p class="flag-panel-head"><span>Email</span><span>vs. a secure portal</span></p>
+            <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Lives in an inbox forever</div>
+            <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Can be forwarded, no record</div>
+            <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>No audit trail if something goes wrong</div>
+        </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<section id="proposal-line" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Why it matters to you</p></div>
+          <h2>It's a real line in a proposal, <span>not just a cost.</span></h2>
+        </div>
+        <p class="section-intro">"We don't move your data over email" is something you can say with a straight face &ndash; to a board treasurer, a compliance officer, or a client asking how their information is protected. It's the difference between saying you're careful with data and being able to prove it.</p>
+        <p class="fine-note">Have a question about how a specific file or project would move through this process? Ask on the call &ndash; it's easier to walk through with a real example than to explain in the abstract.</p>
+  </div>
+</section>
+
+<section id="contact" class="cta-section">
+  <div class="container-fluid">
+    <div class="cta-card">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="common_heading mb-3">
+            <div class="title_style"><span></span><h3>Get started</h3></div>
+            <h2>Start with <span>the audit.</span></h2>
+          </div>
+          <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="who" id="whoBlock">
+            <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
+            <div class="who-text">
+              <div class="who-name">Abbey Cowens</div>
+              <div class="who-title">Founder &amp; Principal</div>
+              <p>You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flag-panel" aria-hidden="true">
-        <p class="flag-panel-head"><span>Email</span><span>vs. a secure portal</span></p>
-        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Lives in an inbox forever</div>
-        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>Can be forwarded, no record</div>
-        <div class="flag-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2.2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>No audit trail if something goes wrong</div>
+      <div class="cal-wrap">
+        <div id="my-cal-inline"></div>
       </div>
+      <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
     </div>
   </div>
 </section>
 
-<section id="proposal-line" class="alt-paper">
-  <div class="wrap">
-    <p class="eyebrow">Why it matters to you</p>
-    <h2>It's a real line in a proposal, not just a cost.</h2>
-    <p class="section-lede">"We don't move your data over email" is something you can say with a straight face &ndash; to a board treasurer, a compliance officer, or a client asking how their information is protected. It's the difference between saying you're careful with data and being able to prove it.</p>
-    <p class="lift-note">Have a question about how a specific file or project would move through this process? Ask on the call &ndash; it's easier to walk through with a real example than to explain in the abstract.</p>
-  </div>
-</section>
+</main>
 
-<footer id="contact">
-  <p class="eyebrow">Get started</p>
-  <h2>Start with the audit.</h2>
-  <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
-
-  <div class="who" id="whoBlock">
-    <div class="photo"><img src="../images/abbey.jpg" alt="Abbey" onerror="document.getElementById('whoBlock').classList.add('no-photo')"></div>
-    <div class="who-text">
-      <b>Abbey Cowens</b>
-      Founder &amp; Principal
-      <p style="margin:10px 0 0;">You'll be on the call with the person doing the work. I've led multiple CRM migrations from the client side, and every time, clean data to the implementer was on me. Once with no data team at all. Now I do it for you.</p>
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row gy-5">
+      <div class="col-lg-4 footer-brand">
+        <a class="brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+          <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9"><line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/></g>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round"><line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/></g>
+            <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/><circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/><circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
+          </svg>
+          <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+        </a>
+        <p>Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h4>Who We Help</h4>
+        <ul>
+          <li><a href="../nonprofit/index.html">Nonprofit organizations</a></li>
+          <li><a href="../legal/index.html">Law firms</a></li>
+          <li><a href="../real-estate/index.html">Real estate</a></li>
+          <li><a href="../business/index.html">Growing businesses</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../index.html#svc-audit">Data Health Audit</a></li>
+          <li><a href="../migration-management/index.html">Migration Management</a></li>
+          <li><a href="../security/index.html">Data Security</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../index.html#contact">Book Your Data Audit</a></li>
+          <li><a href="../contact/index.html">Schedule a Chat</a></li>
+          <li><a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></span>
+      <span class="legal"><a href="../faq/index.html">FAQ</a><a href="../terms/index.html">Terms of Service</a><a href="../privacy/index.html">Privacy Policy</a></span>
     </div>
   </div>
-
-  <div class="cal-wrap">
-    <div id="my-cal-inline"></div>
-  </div>
-  <p class="contact-alt">Not ready to book? Email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
-
-  <div class="foot-bar">
-    <span class="mark-wrap">
-      <svg class="mark" width="34" height="34" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9">
-          <line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/>
-        </g>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round">
-          <line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/>
-        </g>
-        <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/>
-        <circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/>
-        <circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
-      </svg>
-      <span class="wordmark" style="font-size:16px;"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-    </span>
-    <p class="foot-meta">Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
-  </div>
-  <p class="credit">Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></p>
-  <p class="credit"><a href="../faq/index.html">FAQ</a> &middot; <a href="../terms/index.html">Terms of Service</a> &middot; <a href="../privacy/index.html">Privacy Policy</a></p>
 </footer>
 
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
   (function (C, A, L) {
     let p = function (a, ar) { a.q.push(ar); };
@@ -206,42 +268,15 @@
     hideEventTypeDetails: false
   });
 </script>
-
 <script>
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-  navToggle.addEventListener('click', () => {
-    const open = navMenu.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
-  navMenu.addEventListener('click', e => {
-    if (e.target.tagName === 'A') {
-      navMenu.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open menu');
-    }
-  });
-
-  document.querySelectorAll('.has-dropdown').forEach(dd => {
-    const ddToggle = dd.querySelector('.dropdown-toggle');
-    ddToggle.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      const open = dd.classList.toggle('open');
-      ddToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-  document.addEventListener('click', e => {
-    document.querySelectorAll('.has-dropdown.open').forEach(dd => {
-      if (!dd.contains(e.target)) {
-        dd.classList.remove('open');
-        dd.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-      }
-    });
+  // Close the mobile menu after tapping a link.
+  const siteNav = document.getElementById('siteNav');
+  siteNav.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a || a.matches('[data-bs-toggle]') || !siteNav.classList.contains('show')) return;
+    bootstrap.Collapse.getOrCreateInstance(siteNav).hide();
   });
 </script>
-
 <script src="../wordmark.js"></script>
 </body>
 </html>

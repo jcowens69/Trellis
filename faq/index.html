@@ -25,7 +25,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Lato:ital,wght@0,600;1,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/icons/iconly.min.css">
+<link rel="stylesheet" href="../assets/css/ensurx.css">
+<link rel="stylesheet" href="../assets/css/ensurx-media.css">
+<link rel="stylesheet" href="../assets/css/trellis.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,11 +86,11 @@
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="../index.html" aria-label="Trellis Data Partners home">
-      <span class="mark-wrap">
-        <svg class="mark" width="72" height="72" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+        <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="1" y="1" width="92" height="92" rx="22" ry="22" fill="#FAF6EF" stroke="#E4DDD0" stroke-width="2"/>
           <g stroke="#04285C" stroke-width="4" stroke-linecap="round" opacity="0.9">
             <line x1="12.22" y1="12.22" x2="81.78" y2="81.78"/><line x1="12.22" y1="39.15" x2="54.85" y2="81.78"/><line x1="39.15" y1="12.22" x2="81.78" y2="54.85"/>
@@ -98,176 +102,180 @@
           <circle cx="57.1" cy="42.51" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
           <circle cx="70.56" cy="27.93" r="6.06" fill="#395430" stroke="#FAF6EF" stroke-width="2.4"/>
         </svg>
-        <span class="wordmark nav-wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-      </span>
-    </a>
-    <ul class="nav-links" id="navMenu">
-      <li><a href="../index.html">Home</a></li>
-      <li class="has-dropdown">
-        <a href="../index.html#industries">Who We Serve</a>
-        <button class="dropdown-toggle" aria-expanded="false" aria-label="Show industries menu">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="../nonprofit/index.html">Nonprofits</a></li>
-          <li><a href="../legal/index.html">Law Firms</a></li>
-          <li><a href="../real-estate/index.html">Real Estate</a></li>
-          <li><a href="../business/index.html">Businesses</a></li>
-        </ul>
-      </li>
-      <li><a href="../migration-management/index.html">Migration Management</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
+        <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="nav-cta-wrap">
-        <a class="cta-small" href="../contact/index.html">Book Your Data Audit</a>
-        <span class="nav-cta-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav mx-auto" id="navMenu">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Help</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../nonprofit/index.html">Nonprofit organizations</a></li>
+              <li><a class="dropdown-item" href="../legal/index.html">Law firms</a></li>
+              <li><a class="dropdown-item" href="../real-estate/index.html">Real estate</a></li>
+              <li><a class="dropdown-item" href="../business/index.html">Growing businesses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">What We Do</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html#svc-audit">Data Health Audit</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-prep">Data Migration Prep</a></li>
+              <li><a class="dropdown-item" href="../migration-management/index.html">Migration Management</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-post">Post-Migration Assistance</a></li>
+              <li><a class="dropdown-item" href="../index.html#svc-ongoing">Ongoing Data Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../security/index.html">Data Security</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../faq/index.html">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="common_btn" href="../contact/index.html">Book Your Data Audit</a>
+          <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-banner band-photo on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Frequently Asked Questions</p></div>
+          <h1>Questions that come up <span>before the first call.</span></h1>
+        </div>
+        <p class="banner-lede">Pricing, systems, security, and how an engagement actually runs. If your question isn't here, that's what the call is for.</p>
+        <a class="common_btn" href="../contact/index.html">Book Your Data Audit <i class="ensurx-arrow-right"></i></a>
+        <span class="btn-note">Fixed-fee diagnostic. No commitment beyond it.</span>
+  </div>
+</section>
+
+<section id="general" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>The basics</p></div>
+          <h2>Pricing, timeline, <span>and scope.</span></h2>
+        </div>
+        <div class="t-faq">
+          <details open><summary>What does the data audit cost?</summary><p>A flat fee based on the size of your database, so you know the price before we begin: $500 up to 5,000 records, $1,000 for 5,000&ndash;15,000, $1,500 for 15,000&ndash;25,000, $2,000 for 25,000&ndash;40,000, and a custom quote above that or across multiple databases. If you hire Trellis for Migration Management within 60 days of the audit, the audit fee is credited toward the project total.</p></details>
+          <details><summary>How long does an audit take?</summary><p>Most audits are complete within two to four weeks of receiving your data. We'll set a delivery date together at kickoff, so you'll know exactly when to expect your findings.</p></details>
+          <details><summary>Do we have to hire you for the cleanup after the audit?</summary><p>No. The audit is a standalone, fixed-fee deliverable. You keep the findings whether you hire us for anything further or not.</p></details>
+          <details><summary>What do we actually receive from the audit?</summary><p>A written findings report: a one-page executive summary up front, then the full detail with record counts for each issue. We walk through it live with your team &ndash; your implementation partner is welcome to join &ndash; and the report closes with a prioritized list of what to clean up before migration and what can wait.</p></details>
+        </div>
+  </div>
+</section>
+
+<section id="systems" class="section band-dark on-dark">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Systems &amp; industries</p></div>
+          <h2>What we work with, <span>and who we work with.</span></h2>
+        </div>
+        <div class="t-faq">
+          <details open><summary>What CRMs and systems do you work with?</summary><p>Any system that can export to Excel or CSV, which covers nearly all of them. For nonprofits: Raiser's Edge and RE NXT, Salesforce (NPSP and Nonprofit Cloud), HubSpot, Bloomerang, DonorPerfect, Little Green Light, Neon, and Virtuous. For law firms: Clio, MyCase, PracticePanther, Filevine, Smokeball, Litify, CosmoLex, and Actionstep. For real estate: Follow Up Boss, BoldTrail, Lofty/Chime, Sierra Interactive, BoomTown, CINC, Real Geeks, Wise Agent, Top Producer, Salesforce (including Ascendix and Rethink), HubSpot, Buildout, Apto, and ClientLook. For other businesses: HubSpot, Salesforce, Zoho, Pipedrive, and most anything else. We also work with homegrown databases and spreadsheets.</p></details>
+          <details><summary>What industries do you work with?</summary><p>Nonprofits, law firms, real estate professionals, and growing businesses of most any kind &ndash; organizations where relationship-heavy, records-heavy data is core to the work. If you're not sure you fit, <a href="../contact/index.html">reach out anyway</a>; the same problem shows up in a lot of places.</p></details>
+          <details><summary>Do you work with our existing CRM implementation partner?</summary><p>Yes. We work under your engagement, not around it. Many clients come to us through implementation partners who need a specialist for the deep data hygiene work outside their own scope.</p></details>
+        </div>
+  </div>
+</section>
+
+<section id="trust" class="section section-cream">
+  <div class="container-fluid">
+        <div class="common_heading">
+          <div class="title_style"><span></span><p>Trust &amp; security</p></div>
+          <h2>Insurance, data handling, <span>and what's next.</span></h2>
+        </div>
+        <div class="t-faq">
+          <details open><summary>Is Trellis Data Partners insured?</summary><p>Yes. Trellis Data Partners is covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p></details>
+          <details><summary>How is our data kept secure during a project?</summary><p>Every file we exchange moves through a dedicated secure portal, not email &ndash; encrypted in transit and at rest, with a full audit trail and links that expire. See the full breakdown on our <a href="../security/index.html">Data Security</a> page.</p></details>
+          <details><summary>What's the difference between the audit and Migration Management?</summary><p>The audit tells you what's actually in your database and what it'll take to fix. Migration Management is the next step if you want help choosing a new system and running the build itself &ndash; you can do one without the other, or both. See <a href="../migration-management/index.html">how Migration Management works</a>.</p></details>
+        </div>
+  </div>
+</section>
+
+<section id="contact" class="cta-section">
+  <div class="container-fluid">
+    <div class="cta-card">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="common_heading mb-3">
+            <div class="title_style"><span></span><h3>Get started</h3></div>
+            <h2>Still have <span>a question?</span></h2>
+          </div>
+          <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
+        </div>
+        <div class="col-lg-6">
+          <p class="contact-alt contact-alt-lg">Book a time on the <a href="../contact/index.html">Contact page</a>, or email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
+        </div>
       </div>
     </div>
   </div>
-</nav>
-
-<div class="hero">
-  <div class="hero-inner hero-solo">
-    <div>
-      <p class="eyebrow">Frequently Asked Questions</p>
-      <h1>Questions that come up before the first call.</h1>
-      <p class="lede">Pricing, systems, security, and how an engagement actually runs. If your question isn't here, that's what the call is for.</p>
-      <a class="btn btn-sage" href="../contact/index.html">Book Your Data Audit</a>
-      <span class="hero-note">Fixed-fee diagnostic. No commitment beyond it.</span>
-    </div>
-  </div>
-</div>
-
-<section id="general">
-  <div class="wrap">
-    <p class="eyebrow">The basics</p>
-    <h2>Pricing, timeline, and scope.</h2>
-    <div class="faq">
-      <details open>
-        <summary>What does the data audit cost?</summary>
-        <p>A flat fee based on the size of your database, so you know the price before we begin: $500 up to 5,000 records, $1,000 for 5,000&ndash;15,000, $1,500 for 15,000&ndash;25,000, $2,000 for 25,000&ndash;40,000, and a custom quote above that or across multiple databases. If you hire Trellis for Migration Management within 60 days of the audit, the audit fee is credited toward the project total.</p>
-      </details>
-      <details>
-        <summary>How long does an audit take?</summary>
-        <p>Most audits are complete within two to four weeks of receiving your data. We'll set a delivery date together at kickoff, so you'll know exactly when to expect your findings.</p>
-      </details>
-      <details>
-        <summary>Do we have to hire you for the cleanup after the audit?</summary>
-        <p>No. The audit is a standalone, fixed-fee deliverable. You keep the findings whether you hire us for anything further or not.</p>
-      </details>
-      <details>
-        <summary>What do we actually receive from the audit?</summary>
-        <p>A written findings report: a one-page executive summary up front, then the full detail with record counts for each issue. We walk through it live with your team &ndash; your implementation partner is welcome to join &ndash; and the report closes with a prioritized list of what to clean up before migration and what can wait.</p>
-      </details>
-    </div>
-  </div>
 </section>
 
-<section id="systems" class="alt-paper">
-  <div class="wrap">
-    <p class="eyebrow">Systems &amp; industries</p>
-    <h2>What we work with, and who we work with.</h2>
-    <div class="faq">
-      <details open>
-        <summary>What CRMs and systems do you work with?</summary>
-        <p>Any system that can export to Excel or CSV, which covers nearly all of them. For nonprofits: Raiser's Edge and RE NXT, Salesforce (NPSP and Nonprofit Cloud), HubSpot, Bloomerang, DonorPerfect, Little Green Light, Neon, and Virtuous. For law firms: Clio, MyCase, PracticePanther, Filevine, Smokeball, Litify, CosmoLex, and Actionstep. For real estate: Follow Up Boss, BoldTrail, Lofty/Chime, Sierra Interactive, BoomTown, CINC, Real Geeks, Wise Agent, Top Producer, Salesforce (including Ascendix and Rethink), HubSpot, Buildout, Apto, and ClientLook. For other businesses: HubSpot, Salesforce, Zoho, Pipedrive, and most anything else. We also work with homegrown databases and spreadsheets.</p>
-      </details>
-      <details>
-        <summary>What industries do you work with?</summary>
-        <p>Nonprofits, law firms, real estate professionals, and growing businesses of most any kind &ndash; organizations where relationship-heavy, records-heavy data is core to the work. If you're not sure you fit, <a href="../contact/index.html">reach out anyway</a>; the same problem shows up in a lot of places.</p>
-      </details>
-      <details>
-        <summary>Do you work with our existing CRM implementation partner?</summary>
-        <p>Yes. We work under your engagement, not around it. Many clients come to us through implementation partners who need a specialist for the deep data hygiene work outside their own scope.</p>
-      </details>
+</main>
+
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row gy-5">
+      <div class="col-lg-4 footer-brand">
+        <a class="brand-lockup" href="../index.html" aria-label="Trellis Data Partners home">
+          <svg class="logo-mark" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9"><line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/></g>
+            <g stroke="#fff" stroke-width="4" stroke-linecap="round"><line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/></g>
+            <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/><circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/><circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
+          </svg>
+          <span class="wordmark"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
+        </a>
+        <p>Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <h4>Who We Help</h4>
+        <ul>
+          <li><a href="../nonprofit/index.html">Nonprofit organizations</a></li>
+          <li><a href="../legal/index.html">Law firms</a></li>
+          <li><a href="../real-estate/index.html">Real estate</a></li>
+          <li><a href="../business/index.html">Growing businesses</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../index.html#svc-audit">Data Health Audit</a></li>
+          <li><a href="../migration-management/index.html">Migration Management</a></li>
+          <li><a href="../security/index.html">Data Security</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../index.html#contact">Book Your Data Audit</a></li>
+          <li><a href="../contact/index.html">Schedule a Chat</a></li>
+          <li><a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></span>
+      <span class="legal"><a href="../faq/index.html">FAQ</a><a href="../terms/index.html">Terms of Service</a><a href="../privacy/index.html">Privacy Policy</a></span>
     </div>
   </div>
-</section>
-
-<section id="trust">
-  <div class="wrap">
-    <p class="eyebrow">Trust &amp; security</p>
-    <h2>Insurance, data handling, and what's next.</h2>
-    <div class="faq">
-      <details open>
-        <summary>Is Trellis Data Partners insured?</summary>
-        <p>Yes. Trellis Data Partners is covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
-      </details>
-      <details>
-        <summary>How is our data kept secure during a project?</summary>
-        <p>Every file we exchange moves through a dedicated secure portal, not email &ndash; encrypted in transit and at rest, with a full audit trail and links that expire. See the full breakdown on our <a href="../security/index.html">Data Security</a> page.</p>
-      </details>
-      <details>
-        <summary>What's the difference between the audit and Migration Management?</summary>
-        <p>The audit tells you what's actually in your database and what it'll take to fix. Migration Management is the next step if you want help choosing a new system and running the build itself &ndash; you can do one without the other, or both. See <a href="../migration-management/index.html">how Migration Management works</a>.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <p class="eyebrow">Get started</p>
-  <h2>Still have a question?</h2>
-  <p class="sub">One conversation, one fixed fee, one real number for what your data actually needs.</p>
-  <p class="contact-alt">Book a time on the <a href="../contact/index.html">Contact page</a>, or email <a href="mailto:info@trellisdatapartners.com">info@trellisdatapartners.com</a></p>
-
-  <div class="foot-bar">
-    <span class="mark-wrap">
-      <svg class="mark" width="34" height="34" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3.23" y="1" width="92" height="92" rx="22" ry="22" fill="none" stroke="#fff"/>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.9">
-          <line x1="14.45" y1="12.22" x2="84.01" y2="81.78"/><line x1="14.45" y1="39.15" x2="57.08" y2="81.78"/><line x1="41.38" y1="12.22" x2="84.01" y2="54.85"/>
-        </g>
-        <g stroke="#fff" stroke-width="4" stroke-linecap="round">
-          <line x1="84.01" y1="12.22" x2="14.45" y2="81.78"/><line x1="84.01" y1="39.15" x2="41.38" y2="81.78"/><line x1="57.08" y1="12.22" x2="14.45" y2="54.85"/>
-        </g>
-        <circle cx="46.99" cy="57.1" r="6.06" fill="#fff"/>
-        <circle cx="59.33" cy="42.51" r="6.06" fill="#fff"/>
-        <circle cx="72.79" cy="27.93" r="6.06" fill="#fff"/>
-      </svg>
-      <span class="wordmark" style="font-size:16px;"><span class="main">Trellis</span> <span class="sub">Data Partners</span></span>
-    </span>
-    <p class="foot-meta">Covered by General Liability and Professional Liability (Errors &amp; Omissions) insurance.</p>
-  </div>
-  <p class="credit">Built by <a href="https://bigvoltcreative.com" target="_blank" rel="noopener">Big Volt Creative</a></p>
-  <p class="credit"><a href="../terms/index.html">Terms of Service</a> &middot; <a href="../privacy/index.html">Privacy Policy</a></p>
 </footer>
 
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script>
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-  navToggle.addEventListener('click', () => {
-    const open = navMenu.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
-  navMenu.addEventListener('click', e => {
-    if (e.target.tagName === 'A') {
-      navMenu.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open menu');
-    }
-  });
-
-  document.querySelectorAll('.has-dropdown').forEach(dd => {
-    const ddToggle = dd.querySelector('.dropdown-toggle');
-    ddToggle.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      const open = dd.classList.toggle('open');
-      ddToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-  document.addEventListener('click', e => {
-    document.querySelectorAll('.has-dropdown.open').forEach(dd => {
-      if (!dd.contains(e.target)) {
-        dd.classList.remove('open');
-        dd.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
-      }
-    });
+  // Close the mobile menu after tapping a link.
+  const siteNav = document.getElementById('siteNav');
+  siteNav.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a || a.matches('[data-bs-toggle]') || !siteNav.classList.contains('show')) return;
+    bootstrap.Collapse.getOrCreateInstance(siteNav).hide();
   });
 </script>
 <script src="../wordmark.js"></script>
