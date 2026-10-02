@@ -73,6 +73,23 @@ a:hover { color: var(--sage); }
 @media (max-width: 991px) { .section { padding: 80px 0; } }
 @media (max-width: 575px) { .section { padding: 64px 0; } }
 
+/* ── Full-width layout: content runs edge to edge with a small safe margin ── */
+.container-fluid { --bs-gutter-x: 1.5rem; padding-left: clamp(20px, 3.2vw, 56px); padding-right: clamp(20px, 3.2vw, 56px); }
+
+/* Split sections: photo bleeds to the screen edge, full section height */
+.split { position: relative; overflow: hidden; }
+.split-media { position: relative; height: 100%; min-height: 560px; }
+.split-media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.split-copy { width: 100%; padding: 110px clamp(20px, 5vw, 96px); max-width: 860px; }
+@media (max-width: 991px) {
+  .split-media { min-height: 0; height: auto; aspect-ratio: 16 / 10; }
+  .split-copy { padding: 64px clamp(20px, 3.2vw, 56px); }
+}
+@media (max-width: 575px) {
+  .flag-panel { right: 16px; left: 16px; bottom: 16px; width: auto; }
+  .split-media.problem-media { aspect-ratio: 4 / 5; }
+}
+
 /* ── Template heading pattern (eyebrow line + dot, two-tone headline) ───── */
 .common_heading { margin-bottom: 48px; max-width: 760px; }
 .common_heading.text-center { margin: 0 auto 48px; } /* template sets margin:auto, which drops the bottom gap */
@@ -257,21 +274,14 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .service_page_item:hover .ind-icon svg { stroke: var(--sage-light); }
 
 /* ── The problem: template "about company" split ───────────────────────── */
-.problem-media { position: relative; padding: 0 0 60px 0; }
-.problem-media .photo { border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lift); aspect-ratio: 4 / 3.2; }
-.problem-media .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.problem-media::before { content: ""; position: absolute; left: -26px; top: -26px; width: 160px; height: 160px; border-radius: 28px; background: var(--lattice-light), var(--sage-soft); z-index: -1; }
-.flag-panel { position: absolute; right: -18px; bottom: 0; width: 290px; background: var(--navy); color: #fff; border-radius: 18px; padding: 20px 22px; box-shadow: var(--shadow-deep); }
+.flag-panel { position: absolute; right: 32px; bottom: 32px; width: 290px; background: var(--navy); color: #fff; border-radius: 18px; padding: 20px 22px; box-shadow: var(--shadow-deep); }
 .flag-panel-head { display: flex; justify-content: space-between; margin: 0 0 12px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #F4A27A; }
 .flag-panel-head span:last-child { color: #8CA0BC; }
 .flag-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; margin-bottom: 8px; border-radius: 10px; background: rgba(255,255,255,.07); font-family: var(--mono); font-size: 13px; }
 .flag-row:last-child { margin-bottom: 0; }
 .flag-row svg { flex-shrink: 0; stroke: #F4A27A; }
-.problem-copy { padding-left: 40px; }
 .problem-text { font-size: 18px; line-height: 1.7; color: var(--ink-soft); }
 .problem-text strong { color: var(--navy); }
-@media (max-width: 991px) { .problem-copy { padding-left: 0; margin-top: 56px; } .flag-panel { right: 12px; } }
-@media (max-width: 575px) { .flag-panel { position: relative; right: auto; width: auto; margin: -40px 16px 0; } .problem-media { padding-bottom: 0; } }
 
 /* ── What we do: dark lattice band ─────────────────────────────────────── */
 .band-dark { background: var(--lattice-dark), var(--navy); color: #C9D3E2; }
@@ -325,8 +335,6 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .tbd-i { font-style: italic; opacity: .7; }
 
 /* ── Who this is for ───────────────────────────────────────────────────── */
-.audience-media { border-radius: 28px; overflow: hidden; height: 100%; min-height: 360px; box-shadow: var(--shadow-lift); }
-.audience-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .audience-card { background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--sage); padding: 30px 32px; box-shadow: var(--shadow-soft); }
 .audience-card + .audience-card { margin-top: 22px; border-left-color: var(--navy); }
 .audience-card h3 { font-size: 22px; font-weight: 800; margin: 0 0 10px; }
@@ -374,3 +382,13 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-family: var(--
 .footer-bottom { margin-top: 70px; border-top: 1px solid rgba(255,255,255,.1); padding: 24px 0 30px; font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
 .footer-bottom .legal a + a::before { content: "·"; margin: 0 10px; color: #6E819C; }
 @media (max-width: 575px) { .site-footer { padding-top: 170px; } }
+
+/* Undo the template's responsive card squeeze (70% widths, extra padding) so cards run full width */
+.great_service_section .service_page_item { width: 100%; margin: 0; padding: 0; }
+.stage-row .insurance_item { width: 100%; margin: 0; padding: 38px 30px; }
+@media (max-width: 575px) {
+  .great_service_section .service_page_item_wrapper { padding: 28px 22px; }
+  .stage-row .insurance_item { padding: 30px 22px; }
+  .svc-card { padding: 28px 22px; }
+  .cta-card { padding: 30px 20px; }
+}
